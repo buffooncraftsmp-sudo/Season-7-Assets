@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:lux",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.lux.title",
+    "fallback": "Lux"
+  }
+}

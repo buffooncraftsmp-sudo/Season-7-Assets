@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:nebs",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.nebs.title",
+    "fallback": "Nebs"
+  }
+}

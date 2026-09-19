@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:eve",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.eve.title",
+    "fallback": "Eve"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:ky",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.ky.title",
+    "fallback": "Ky"
+  }
+}

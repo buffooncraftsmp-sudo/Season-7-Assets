@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:thunder",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.thunder.title",
+    "fallback": "Thunder"
+  }
+}
