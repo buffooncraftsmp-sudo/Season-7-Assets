@@ -6,19 +6,23 @@ downloads at runtime.
 
 ## Adding a new emote
 
-1. Drop the PNG in `chat_emotes/images/` (name it after the emote, e.g. `kappa.png`).
+1. Drop the PNG/GIF in `chat_emotes/images/` (name it after the emote, e.g. `kappa.png`).
 2. Commit and push it to `main` - the recipe URL below only works once the file exists
    on the branch it points at.
-3. Add `datapack/data/buffooncraft/recipe/<name>.json`:
+3. Add `datapack/data/emojiful/recipes/<name>.json` (namespace and folder name match
+   what Emojiful's own Discord bot generates - `data/emojiful/recipes/`, not the pack's
+   own namespace):
 
 ```json
 {
-  "type": "emojiful:emoji_recipe",
-  "category": "BuffoonCraft",
+  "category": "Buffooncraft",
   "name": "<name>",
-  "url": "https://raw.githubusercontent.com/buffooncraftsmp-sudo/Season-7-Assets/main/chat_emotes/images/<name>.png"
+  "url": "https://raw.githubusercontent.com/buffooncraftsmp-sudo/Season-7-Assets/main/chat_emotes/images/<name>.png",
+  "type": "emojiful:emoji_recipe"
 }
 ```
+
+Use category `"Buffooncraft"` for person-specific emotes, `"Generic"` for everything else.
 
 ## Gotcha
 
