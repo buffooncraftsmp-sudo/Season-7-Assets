@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 121,
-    "description": "BuffoonCraft Season 7 Datapack - Made by FlyingVillager and Supernova_Relic"
+    "description": "BuffoonCraft Season 7 Datapack - Made by FlyingVillager and Supernova_Relic",
+    "min_format": [121, 0],
+    "max_format": [121, 0]
   }
 }
