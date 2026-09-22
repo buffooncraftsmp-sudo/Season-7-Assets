@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:skip",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.skip.title",
+    "fallback": "Skip"
+  }
+}
