@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:astral_wheel",
+  "width": 4,
+  "height": 4,
+  "title": {
+    "translate": "painting.buffooncraft.astral_wheel.title",
+    "fallback": "Astral Wheel"
+  }
+}

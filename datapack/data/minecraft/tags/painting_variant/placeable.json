@@ -27,6 +27,11 @@
     "buffooncraft:orbits",
     "buffooncraft:gold_star_chart",
     "buffooncraft:theoria_lunae",
-    "buffooncraft:seed_map"
+    "buffooncraft:seed_map",
+    "buffooncraft:firmament",
+    "buffooncraft:astral_wheel",
+    "buffooncraft:newtons_telescope",
+    "buffooncraft:lens_study",
+    "buffooncraft:cosmic_map"
   ]
 }

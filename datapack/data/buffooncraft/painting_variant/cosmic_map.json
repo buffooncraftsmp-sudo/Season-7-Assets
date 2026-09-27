@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:cosmic_map",
+  "width": 4,
+  "height": 4,
+  "title": {
+    "translate": "painting.buffooncraft.cosmic_map.title",
+    "fallback": "Cosmic Map"
+  }
+}
