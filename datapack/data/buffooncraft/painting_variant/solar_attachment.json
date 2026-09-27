@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:solar_attachment",
+  "width": 3,
+  "height": 4,
+  "title": {
+    "translate": "painting.buffooncraft.solar_attachment.title",
+    "fallback": "The Solar Attachment"
+  }
+}

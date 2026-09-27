@@ -17,6 +17,8 @@
     "buffooncraft:opg",
     "buffooncraft:planisphere",
     "buffooncraft:seasons",
-    "buffooncraft:celestial"
+    "buffooncraft:celestial",
+    "buffooncraft:star_chart",
+    "buffooncraft:solar_attachment"
   ]
 }
