@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:zodiac_band",
+  "width": 4,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.zodiac_band.title",
+    "fallback": "Zodiac Band"
+  }
+}
