@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:taurus",
+  "width": 3,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.taurus.title",
+    "fallback": "Taurus"
+  }
+}

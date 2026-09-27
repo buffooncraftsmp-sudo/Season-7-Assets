@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:draco",
+  "width": 4,
+  "height": 3,
+  "title": {
+    "translate": "painting.buffooncraft.draco.title",
+    "fallback": "Draco"
+  }
+}
