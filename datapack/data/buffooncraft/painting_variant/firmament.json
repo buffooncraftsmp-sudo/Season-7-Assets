@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:firmament",
+  "width": 4,
+  "height": 4,
+  "title": {
+    "translate": "painting.buffooncraft.firmament.title",
+    "fallback": "Le Firmament"
+  }
+}

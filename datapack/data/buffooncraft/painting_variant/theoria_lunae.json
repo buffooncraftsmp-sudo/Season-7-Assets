@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:theoria_lunae",
+  "width": 4,
+  "height": 3,
+  "title": {
+    "translate": "painting.buffooncraft.theoria_lunae.title",
+    "fallback": "Theoria Lunae"
+  }
+}

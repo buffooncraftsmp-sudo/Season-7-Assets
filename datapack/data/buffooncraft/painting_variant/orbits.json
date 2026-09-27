@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:orbits",
+  "width": 2,
+  "height": 3,
+  "title": {
+    "translate": "painting.buffooncraft.orbits.title",
+    "fallback": "Orbits"
+  }
+}

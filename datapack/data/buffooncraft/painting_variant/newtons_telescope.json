@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:newtons_telescope",
+  "width": 2,
+  "height": 3,
+  "title": {
+    "translate": "painting.buffooncraft.newtons_telescope.title",
+    "fallback": "Newton's Telescope"
+  }
+}

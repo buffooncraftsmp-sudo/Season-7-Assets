@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:seasons",
+  "width": 2,
+  "height": 2,
+  "title": {
+    "translate": "painting.buffooncraft.seasons.title",
+    "fallback": "Seasons"
+  }
+}

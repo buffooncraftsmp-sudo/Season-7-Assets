@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:planisphere",
+  "width": 2,
+  "height": 2,
+  "title": {
+    "translate": "painting.buffooncraft.planisphere.title",
+    "fallback": "Planisphaerium Arateum"
+  }
+}

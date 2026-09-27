@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:lens_study",
+  "width": 2,
+  "height": 1,
+  "title": {
+    "translate": "painting.buffooncraft.lens_study.title",
+    "fallback": "Lens Study"
+  }
+}

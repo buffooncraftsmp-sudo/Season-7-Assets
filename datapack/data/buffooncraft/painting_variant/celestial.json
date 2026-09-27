@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:celestial",
+  "width": 2,
+  "height": 4,
+  "title": {
+    "translate": "painting.buffooncraft.celestial.title",
+    "fallback": "Celestial Map"
+  }
+}

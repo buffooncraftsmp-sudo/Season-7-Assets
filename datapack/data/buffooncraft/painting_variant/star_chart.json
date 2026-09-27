@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:star_chart",
+  "width": 2,
+  "height": 4,
+  "title": {
+    "translate": "painting.buffooncraft.star_chart.title",
+    "fallback": "Ancient Star Chart"
+  }
+}
