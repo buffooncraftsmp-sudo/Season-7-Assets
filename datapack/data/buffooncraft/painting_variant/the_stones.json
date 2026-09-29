@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:the_stones",
+  "width": 3,
+  "height": 2,
+  "title": {
+    "translate": "painting.buffooncraft.the_stones.title",
+    "fallback": "The Stones"
+  }
+}
