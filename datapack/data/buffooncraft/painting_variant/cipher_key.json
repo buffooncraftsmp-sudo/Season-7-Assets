@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:cipher_key",
+  "width": 4,
+  "height": 2,
+  "title": {
+    "translate": "painting.buffooncraft.cipher_key.title",
+    "fallback": "Cipher Key"
+  }
+}

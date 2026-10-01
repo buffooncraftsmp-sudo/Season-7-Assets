@@ -33,6 +33,8 @@
     "buffooncraft:newtons_telescope",
     "buffooncraft:lens_study",
     "buffooncraft:cosmic_map",
-    "buffooncraft:the_stones"
+    "buffooncraft:the_stones",
+    "buffooncraft:astronomer_cipher",
+    "buffooncraft:cipher_key"
   ]
 }

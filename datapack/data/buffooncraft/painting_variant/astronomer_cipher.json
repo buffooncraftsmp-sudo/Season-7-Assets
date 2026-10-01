@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:astronomer_cipher",
+  "width": 4,
+  "height": 3,
+  "title": {
+    "translate": "painting.buffooncraft.astronomer_cipher.title",
+    "fallback": "Astronomer Cipher"
+  }
+}
