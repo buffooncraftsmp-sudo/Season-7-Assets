@@ -1,7 +1,7 @@
 {
   "asset_id": "buffooncraft:seed_map",
-  "width": 8,
-  "height": 4,
+  "width": 9,
+  "height": 5,
   "title": {
     "translate": "painting.buffooncraft.seed_map.title",
     "fallback": "Map of the Known World"
