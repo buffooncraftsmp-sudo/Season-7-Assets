@@ -1,0 +1,6 @@
+{
+  "death.attack.buffoon.toxic_water": "%1$s dissolved in the Gas Giant's toxic pool",
+  "death.attack.buffoon.toxic_water.player": "%1$s dissolved in the Gas Giant's toxic pool while fleeing %2$s",
+  "death.attack.buffoon.astral": "%1$s was unmade by the Astronomer",
+  "death.attack.buffoon.astral.player": "%1$s was unmade by the Astronomer while fighting %2$s"
+}
