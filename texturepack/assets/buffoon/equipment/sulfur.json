@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "buffoon:sulfur"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "buffoon:sulfur"
+      }
+    ]
+  }
+}
