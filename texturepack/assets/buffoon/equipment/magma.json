@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "buffoon:magma"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "buffoon:magma"
+      }
+    ]
+  }
+}
