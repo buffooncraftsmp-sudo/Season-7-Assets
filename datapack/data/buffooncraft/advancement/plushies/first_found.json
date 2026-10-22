@@ -12,21 +12,22 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
     "background": "minecraft:gui/advancements/backgrounds/husbandry",
-    "description": "Find a plushie hidden in a chest",
+    "description": "Find your first plushie",
     "icon": {
-      "id": "plushie_friends:plushie",
+      "id": "minecraft:paper",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"AngelByU\"}}"
+        "minecraft:item_model": "buffoon:bc_logo"
       }
     },
-    "show_toast": true,
-    "title": "Plushie Friends"
+    "title": "I Choose You!"
   },
   "requirements": [
     [
       "any_plushie"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "buffooncraft:plushies/first_found"
+  }
 }

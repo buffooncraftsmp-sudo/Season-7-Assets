@@ -7,9 +7,10 @@
        and builds <namespace>:plushies/all_plushies, a pool that picks one of them
        at equal weight. Each plushie is also tagged {buffooncraft_plushie:"<id>"}
        in custom_data so advancements can identify it.
-    2. Builds the <namespace>:plushies/* advancement tab - a root ("find any"),
-       one advancement per plushie and a challenge for collecting the full set.
-       Each plushie matches on our tag OR PlushieOwner.name, so one that has been
+    2. Builds the <namespace>:plushies/* advancement tab (BC logo icon) with two
+       advancements: "first plushie" (tab root) and a "full set" challenge. Each
+       plays a buffoon:plushie.* sound via a reward function. For the full set,
+       each plushie matches on our tag OR PlushieOwner.name, so one that has been
        placed and broken (which drops our tag) still counts.
     3. Pulls each matching vanilla chest loot table out of the Minecraft client jar,
        injects one extra pool ("chance" roll -> all_plushies) and writes it to
@@ -19,7 +20,7 @@
     independently the first time they open a given Lootr chest.
 
     This script OWNS datapack/data/minecraft/loot_table/ and
-    datapack/data/<namespace>/advancement/plushies/ - both are wiped and
+    datapack/data/<namespace>/advancement/plushies/ and function/plushies/ - all are wiped and
     regenerated on every run. Do not hand-edit files in there.
 
     Re-run after adding/removing plushies, changing the config, or updating the
@@ -141,7 +142,8 @@ $($entries -join ",`n")
 
     # --- Advancements ---------------------------------------------------------
     $advDir = Join-Path $DatapackDir "data\$namespace\advancement\plushies"
-    if (Test-Path $advDir) { Remove-Item $advDir -Recurse -Force }
+    $fnDir  = Join-Path $DatapackDir "data\$namespace\function\plushies"
+    foreach ($d in $advDir, $fnDir) { if (Test-Path $d) { Remove-Item $d -Recurse -Force } }
 
     # inventory_changed criterion for a plushie whose custom_data contains $Snbt (partial match).
     function Get-PlushieCriterion {
@@ -164,21 +166,15 @@ $($entries -join ",`n")
 "@.TrimEnd()
     }
 
-    # Icon rendered with the owner's skin (the client resolves PlushieOwner.name).
-    function Get-PlushieIcon {
-        param([string]$Owner)
-@"
-{
-      "id": "plushie_friends:plushie",
-      "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"$Owner\"}}"
-      }
-    }
-"@.TrimEnd()
+    # Reward functions play the sound events defined in texturepack/assets/buffoon/sounds.json.
+    $sounds = @{ first_found = 'buffoon:plushie.first_found'; full_set = 'buffoon:plushie.full_set' }
+    foreach ($name in $sounds.Keys) {
+        Write-JsonText (Join-Path $fnDir "$name.mcfunction") "playsound $($sounds[$name]) master @s ~ ~ ~ 1 1 1`n"
     }
 
-    $rootId = "${namespace}:plushies/root"
-    Write-JsonText (Join-Path $advDir 'root.json') @"
+    # Tab icon / root: the BC logo (texturepack item model buffoon:bc_logo on a paper base).
+    $rootId = "${namespace}:plushies/first_found"
+    Write-JsonText (Join-Path $advDir 'first_found.json') @"
 {
   "criteria": {
     "any_plushie": {
@@ -193,49 +189,32 @@ $($entries -join ",`n")
     }
   },
   "display": {
-    "announce_to_chat": false,
     "background": "minecraft:gui/advancements/backgrounds/husbandry",
-    "description": "Find a plushie hidden in a chest",
-    "icon": $(Get-PlushieIcon $plushies[0].Owner),
-    "show_toast": true,
-    "title": "Plushie Friends"
+    "description": "Find your first plushie",
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "buffoon:bc_logo"
+      }
+    },
+    "title": "I Choose You!"
   },
   "requirements": [
     [
       "any_plushie"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "${namespace}:plushies/first_found"
+  }
 }
 "@
 
     $fullSetCriteria = @()
     $fullSetRequirements = @()
     foreach ($p in $plushies) {
-        $tagged = Get-PlushieCriterion "{buffooncraft_plushie:`"$($p.Id)`"}"
-        $owned  = Get-PlushieCriterion "{PlushieOwner:{name:`"$($p.Owner)`"}}"
-
-        Write-JsonText (Join-Path $advDir "$($p.Id).json") @"
-{
-  "parent": "$rootId",
-  "criteria": {
-    "tagged": $tagged,
-    "owner": $owned
-  },
-  "display": {
-    "description": "Find $($p.Owner)'s plushie",
-    "icon": $(Get-PlushieIcon $p.Owner),
-    "title": "$($p.Owner)"
-  },
-  "requirements": [
-    [
-      "tagged",
-      "owner"
-    ]
-  ]
-}
-"@
-        $fullSetCriteria += "    `"$($p.Id)_tagged`": $tagged"
-        $fullSetCriteria += "    `"$($p.Id)_owner`": $owned"
+        $fullSetCriteria += "    `"$($p.Id)_tagged`": $(Get-PlushieCriterion "{buffooncraft_plushie:`"$($p.Id)`"}")"
+        $fullSetCriteria += "    `"$($p.Id)_owner`": $(Get-PlushieCriterion "{PlushieOwner:{name:`"$($p.Owner)`"}}")"
         $fullSetRequirements += "    [`n      `"$($p.Id)_tagged`",`n      `"$($p.Id)_owner`"`n    ]"
     }
 
@@ -248,21 +227,24 @@ $($fullSetCriteria -join ",`n")
   "display": {
     "description": "Collect all $($plushies.Count) plushies",
     "frame": "challenge",
-    "icon": $(Get-PlushieIcon $plushies[-1].Owner),
-    "title": "Plushie Collector"
+    "icon": {
+      "id": "plushie_friends:plushie"
+    },
+    "title": "Gotta Collect 'Em All"
   },
   "requirements": [
 $($fullSetRequirements -join ",`n")
   ],
   "rewards": {
-    "experience": 100
+    "experience": 100,
+    "function": "${namespace}:plushies/full_set"
   }
 }
 "@
 
     # Sanity-check every advancement parses before moving on.
     Get-ChildItem $advDir -Filter '*.json' | ForEach-Object { $null = Get-Content $_.FullName -Raw | ConvertFrom-Json }
-    Write-Log "Built $($plushies.Count + 2) advancement(s) in ${namespace}:plushies/"
+    Write-Log "Built 2 advancement(s) in ${namespace}:plushies/"
 
     # --- Vanilla chest overrides ----------------------------------------------
     $outRoot = Join-Path $DatapackDir 'data\minecraft\loot_table'

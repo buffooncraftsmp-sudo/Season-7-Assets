@@ -1,0 +1,14 @@
+{
+  "plushie.first_found": {
+    "subtitle": "subtitles.buffoon.plushie.first_found",
+    "sounds": [
+      "minecraft:random/levelup"
+    ]
+  },
+  "plushie.full_set": {
+    "subtitle": "subtitles.buffoon.plushie.full_set",
+    "sounds": [
+      "minecraft:ui/toast/challenge_complete"
+    ]
+  }
+}
