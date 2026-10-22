@@ -27,11 +27,14 @@
 #>
 [CmdletBinding()]
 param(
-    [string]$ConfigPath = (Join-Path $PSScriptRoot 'plushie-loot.config.json')
+    [string]$ConfigPath
 )
 
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
+
+# $PSScriptRoot is empty in param defaults under Windows PowerShell 5.1 -File, so resolve here.
+if (-not $ConfigPath) { $ConfigPath = Join-Path $PSScriptRoot 'plushie-loot.config.json' }
 
 $RepoRoot    = Resolve-Path (Join-Path $PSScriptRoot '..\..')
 $DatapackDir = Join-Path $RepoRoot 'datapack'

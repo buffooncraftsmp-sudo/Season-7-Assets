@@ -4,7 +4,7 @@
     {
       "condition": {
         "type": "minecraft:random_chance",
-        "chance": 0.05
+        "chance": 0.4
       },
       "entries": [
         {
