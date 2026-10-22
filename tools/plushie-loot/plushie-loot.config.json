@@ -1,8 +1,18 @@
 {
   "minecraftJar": "%APPDATA%\\.minecraft\\versions\\26.3\\26.3.jar",
   "namespace": "buffooncraft",
-  "defaultChance": 0.05,
-  "chanceOverrides": {},
+  "defaultChance": 0.25,
+  "chanceOverrides": {
+    "chests/ancient_city": 0.4,
+    "chests/bastion_treasure": 0.4,
+    "chests/buried_treasure": 0.4,
+    "chests/end_city_treasure": 0.4,
+    "chests/woodland_mansion": 0.4,
+    "chests/stronghold_library": 0.4,
+    "chests/shipwreck_treasure": 0.4,
+    "chests/jungle_temple": 0.4,
+    "chests/desert_pyramid": 0.4
+  },
   "includeTables": [
     "chests/*",
     "barrels/*"
