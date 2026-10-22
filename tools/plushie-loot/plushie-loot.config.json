@@ -1,0 +1,15 @@
+{
+  "minecraftJar": "%APPDATA%\\.minecraft\\versions\\26.3\\26.3.jar",
+  "namespace": "buffooncraft",
+  "defaultChance": 0.05,
+  "chanceOverrides": {},
+  "includeTables": [
+    "chests/*",
+    "barrels/*"
+  ],
+  "excludeTables": [
+    "chests/spawn_bonus_chest",
+    "chests/jungle_temple_dispenser",
+    "chests/trial_chambers/reward*"
+  ]
+}
