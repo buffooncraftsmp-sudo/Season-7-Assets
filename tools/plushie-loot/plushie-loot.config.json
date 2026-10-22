@@ -13,6 +13,23 @@
     "chests/jungle_temple": 0.4,
     "chests/desert_pyramid": 0.4
   },
+  "advancements": {
+    "angelbyu":        { "title": "What a Ride",            "description": "Find Angel's plushie. Keep your hands inside the rollercoaster" },
+    "callmeevegaming": { "title": "Straight to the Point",  "description": "Find Eve's plushie. No beating around the bush" },
+    "doranoob":        { "title": "Dines of Dora",          "description": "Find Dora's plushie. Dig deep enough and you'll find anything" },
+    "flyingvillager":  { "title": "Plot Twist",             "description": "Find Flying Villager's plushie. He wrote this bit" },
+    "foolishsage":     { "title": "Moving Mountains",       "description": "Find Sage's plushie. It was under a mountain the whole time" },
+    "korny46":         { "title": "Yo Ho Korny",            "description": "Find Korny's plushie. Follow the giant green skull" },
+    "kylady35":        { "title": "All Hail the Queen",     "description": "Find Kylady's plushie. Bow before Buffooncraft royalty" },
+    "lonestarr_82":    { "title": "You're Under Arrest",    "description": "Find Lone's plushie. Order has been kept" },
+    "luxjgaming":      { "title": "It Was Lux",             "description": "Find Lux's plushie. Whatever just happened, it was probably him" },
+    "opg8":            { "title": "Shroom With a View",     "description": "Find OPG's plushie, somewhere among the giant mushrooms" },
+    "princess_nebula": { "title": "The Grind Never Stops",  "description": "Find Nebs' plushie. She's probably got the full set already" },
+    "shutmountain409": { "title": "Go Big or Go Home",      "description": "Find Shut's plushie. Biggest builds, bigger heart" },
+    "supernova_relic": { "title": "Hidden in Plain Sight",  "description": "Find Nova's plushie. There's a farm in here somewhere" },
+    "theskipjack81":   { "title": "Welcome to Java",        "description": "Find Skip's plushie. No Bedrock required" },
+    "thunderhand64":   { "title": "Och!",                   "description": "Find ThunderHand's plushie. Measured to the block, palette perfect" }
+  },
   "includeTables": [
     "chests/*",
     "barrels/*"

@@ -7,11 +7,12 @@
        and builds <namespace>:plushies/all_plushies, a pool that picks one of them
        at equal weight. Each plushie is also tagged {buffooncraft_plushie:"<id>"}
        in custom_data so advancements can identify it.
-    2. Builds the <namespace>:plushies/* advancement tab (BC logo icon) with two
-       advancements: "first plushie" (tab root) and a "full set" challenge. Each
-       plays a buffoon:plushie.* sound via a reward function. For the full set,
-       each plushie matches on our tag OR PlushieOwner.name, so one that has been
-       placed and broken (which drops our tag) still counts.
+    2. Builds the <namespace>:plushies/* advancement tab (BC logo icon): "first
+       plushie" (tab root), one advancement per plushie (title/description from
+       the config's "advancements" block, icon = that player's plushie) and a
+       "full set" challenge. First/full set play buffoon:plushie.* sounds via
+       reward functions. Each plushie matches on our tag OR PlushieOwner.name, so
+       one that has been placed and broken (which drops our tag) still counts.
     3. Pulls each matching vanilla chest loot table out of the Minecraft client jar,
        injects one extra pool ("chance" roll -> all_plushies) and writes it to
        datapack/data/minecraft/loot_table/. Vanilla pools are kept byte-for-byte.
@@ -210,17 +211,68 @@ $($entries -join ",`n")
 }
 "@
 
+    # Icon rendered with the owner's skin (the client resolves PlushieOwner.name).
+    function Get-PlushieIcon {
+        param([string]$Owner)
+        $snbt = ('{PlushieOwner:{name:"' + $Owner + '"}}').Replace('"', '\"')
+@"
+{
+      "id": "plushie_friends:plushie",
+      "components": {
+        "minecraft:custom_data": "$snbt"
+      }
+    }
+"@.TrimEnd()
+    }
+
+    $advText = @{}
+    if ($config.PSObject.Properties['advancements']) {
+        foreach ($prop in $config.advancements.PSObject.Properties) { $advText[$prop.Name] = $prop.Value }
+    }
+
     $fullSetCriteria = @()
     $fullSetRequirements = @()
     foreach ($p in $plushies) {
+        # Our loot tag, plus the owner name as stored by the mod. Mojang may return the canonical
+        # name in different case to what's in the definition, so match the lowercase form too.
         # Build the SNBT first - nesting quotes inside "$( )" truncates the argument.
-        $taggedSnbt = '{buffooncraft_plushie:"' + $p.Id + '"}'
-        $ownerSnbt  = '{PlushieOwner:{name:"' + $p.Owner + '"}}'
-        $tagged = Get-PlushieCriterion $taggedSnbt
-        $owned  = Get-PlushieCriterion $ownerSnbt
-        $fullSetCriteria += "    `"$($p.Id)_tagged`": $tagged"
-        $fullSetCriteria += "    `"$($p.Id)_owner`": $owned"
-        $fullSetRequirements += "    [`n      `"$($p.Id)_tagged`",`n      `"$($p.Id)_owner`"`n    ]"
+        $criteria = [ordered]@{ tagged = Get-PlushieCriterion ('{buffooncraft_plushie:"' + $p.Id + '"}') }
+        $names = @($p.Owner, $p.Owner.ToLowerInvariant()) | Select-Object -Unique
+        $n = 0
+        foreach ($name in $names) {
+            $key = if ($n -eq 0) { 'owner' } else { "owner_$n" }
+            $criteria[$key] = Get-PlushieCriterion ('{PlushieOwner:{name:"' + $name + '"}}')
+            $n++
+        }
+
+        $title = $p.Owner; $description = "Find $($p.Owner)'s plushie"
+        if ($advText.ContainsKey($p.Id)) { $title = $advText[$p.Id].title; $description = $advText[$p.Id].description }
+        else { Write-Log "No advancement text for $($p.Id) in config - using defaults" 'WARN' }
+
+        $critJson = ($criteria.Keys | ForEach-Object { "    `"$_`": $($criteria[$_])" }) -join ",`n"
+        $reqJson  = ($criteria.Keys | ForEach-Object { "      `"$_`"" }) -join ",`n"
+
+        Write-JsonText (Join-Path $advDir "$($p.Id).json") @"
+{
+  "parent": "$rootId",
+  "criteria": {
+$critJson
+  },
+  "display": {
+    "description": "$description",
+    "icon": $(Get-PlushieIcon $p.Owner),
+    "title": "$title"
+  },
+  "requirements": [
+    [
+$reqJson
+    ]
+  ]
+}
+"@
+
+        foreach ($k in $criteria.Keys) { $fullSetCriteria += "    `"$($p.Id)_$k`": $($criteria[$k])" }
+        $fullSetRequirements += "    [`n" + (($criteria.Keys | ForEach-Object { "      `"$($p.Id)_$_`"" }) -join ",`n") + "`n    ]"
     }
 
     Write-JsonText (Join-Path $advDir 'full_set.json') @"
@@ -259,7 +311,7 @@ $($fullSetRequirements -join ",`n")
             }
         }
     }
-    Write-Log "Built 2 advancement(s) in ${namespace}:plushies/"
+    Write-Log "Built $($plushies.Count + 2) advancement(s) in ${namespace}:plushies/"
 
     # --- Vanilla chest overrides ----------------------------------------------
     $outRoot = Join-Path $DatapackDir 'data\minecraft\loot_table'

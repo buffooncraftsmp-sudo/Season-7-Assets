@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:paper",
       "components": {
-        "minecraft:item_model": "buffoon:bc_logo"
+        "minecraft:item_model": "buffoon:s7_logo"
       }
     },
     "title": {
