@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:ore",
+  "discard_chance_on_air_exposure": 0.0,
+  "size": 4,
+  "targets": [
+    {
+      "state": "minecraft:sea_lantern",
+      "target": {
+        "predicate_type": "minecraft:block_match",
+        "block": "minecraft:prismarine"
+      }
+    },
+    {
+      "state": "minecraft:sea_lantern",
+      "target": {
+        "predicate_type": "minecraft:block_match",
+        "block": "minecraft:dark_prismarine"
+      }
+    }
+  ]
+}

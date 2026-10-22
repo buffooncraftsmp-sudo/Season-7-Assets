@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:waxed_lightning_rod"
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:waxed_lightning_rod",
+                "components": {
+                  "minecraft:custom_data": {
+                    "buffoon_pump": "nozzle"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "buffoon:pump/nozzle/placed"
+  }
+}

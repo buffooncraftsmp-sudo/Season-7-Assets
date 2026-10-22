@@ -1,0 +1,12 @@
+bossbar set buffoon:mining players @a[distance=..300]
+playsound minecraft:block.grindstone.use block @a[distance=..300] ~ ~ ~ 4 0.5
+playsound minecraft:block.deepslate.break block @a[distance=..300] ~ ~ ~ 4 0.6
+scoreboard players operation #s buffoon.laser = #mine buffoon.laser
+scoreboard players operation #s buffoon.laser /= #20 buffoon.laser
+scoreboard players operation #m buffoon.laser = #s buffoon.laser
+scoreboard players operation #m buffoon.laser /= #60 buffoon.laser
+scoreboard players operation #s buffoon.laser %= #60 buffoon.laser
+execute if score #s buffoon.laser matches 10.. run title @a[distance=..300] actionbar [{text:"Core extraction: ",color:"gold"},{score:{name:"#m",objective:"buffoon.laser"},color:"yellow"},{text:":",color:"yellow"},{score:{name:"#s",objective:"buffoon.laser"},color:"yellow"}]
+execute if score #s buffoon.laser matches ..9 run title @a[distance=..300] actionbar [{text:"Core extraction: ",color:"gold"},{score:{name:"#m",objective:"buffoon.laser"},color:"yellow"},{text:":0",color:"yellow"},{score:{name:"#s",objective:"buffoon.laser"},color:"yellow"}]
+execute if score #mine buffoon.laser matches 200 run playsound minecraft:block.note_block.bell master @a[distance=..300] ~ ~ ~ 100 2
+execute if score #mine buffoon.laser matches ..200 run playsound minecraft:block.note_block.pling master @a[distance=..300] ~ ~ ~ 100 1.5

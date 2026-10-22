@@ -1,0 +1,9 @@
+bossbar set buffoon:ufo players @a[distance=..250]
+execute if score #pow buffoon.ufo matches 801.. run playsound minecraft:block.beacon.ambient master @a[distance=..250] ~ ~ ~ 6 0.6
+execute if score #pow buffoon.ufo matches 401..800 run playsound minecraft:block.beacon.ambient master @a[distance=..250] ~ ~ ~ 6 1.0
+execute if score #pow buffoon.ufo matches ..400 run playsound minecraft:block.beacon.ambient master @a[distance=..250] ~ ~ ~ 6 1.5
+playsound minecraft:block.conduit.ambient master @a[distance=..250] ~ ~ ~ 4 1.2
+scoreboard players operation #s buffoon.ufo = #pow buffoon.ufo
+scoreboard players operation #s buffoon.ufo /= #20 buffoon.ufo
+title @a[distance=..250] actionbar [{text:"UFO power-up: ",color:"#7CFF4F"},{score:{name:"#s",objective:"buffoon.ufo"},color:"white"},{text:"s",color:"white"}]
+execute if score #pow buffoon.ufo matches ..200 run playsound minecraft:block.note_block.pling master @a[distance=..250] ~ ~ ~ 100 1.8

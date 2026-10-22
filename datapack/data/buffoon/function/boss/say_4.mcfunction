@@ -1,0 +1,1 @@
+execute as @e[type=mannequin,tag=buffoon.boss,limit=1] at @s run tellraw @a[distance=..150] [{text:"The Astronomer: ",color:"#B48CFF",bold:true},{text:"Only one variable remains to be removed. You, Buffoons.",color:"white",italic:true}]

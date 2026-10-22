@@ -1,0 +1,1 @@
+give @s minecraft:lime_stained_glass[minecraft:custom_name={text:"UFO Laser Emitter",color:"#7CFF4F",italic:false,bold:true},minecraft:lore=[{text:"Admin block - marks where the UFO laser fires from",color:"gray",italic:true}],minecraft:custom_data={buffoon_ufo:"emitter"},minecraft:enchantment_glint_override=true,minecraft:max_stack_size=1]

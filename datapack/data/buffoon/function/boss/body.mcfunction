@@ -1,0 +1,17 @@
+execute unless score #still buffoon.boss matches 1.. if score #state buffoon.boss matches 2 as @n[type=marker,tag=buffoon.boss_orbit] at @s run tp @s ~ ~ ~ ~1.6 ~
+execute unless score #still buffoon.boss matches 1.. if score #state buffoon.boss matches 4 as @n[type=marker,tag=buffoon.boss_orbit] at @s run tp @s ~ ~ ~ ~2.6 ~
+execute unless score #still buffoon.boss matches 1.. if score #dir buffoon.boss matches 1 if score #state buffoon.boss matches 2 as @n[type=marker,tag=buffoon.boss_orbit] at @s run tp @s ~ ~ ~ ~-3.2 ~
+execute unless score #still buffoon.boss matches 1.. if score #dir buffoon.boss matches 1 if score #state buffoon.boss matches 4 as @n[type=marker,tag=buffoon.boss_orbit] at @s run tp @s ~ ~ ~ ~-5.2 ~
+execute unless score #still buffoon.boss matches 1.. if score #state buffoon.boss matches 2 at @n[type=marker,tag=buffoon.boss_orbit] rotated as @n[type=marker,tag=buffoon.boss_orbit] positioned ^ ^12 ^13 run tp @n[type=mannequin,tag=buffoon.boss] ~ ~ ~
+execute unless score #still buffoon.boss matches 1.. if score #state buffoon.boss matches 4 at @n[type=marker,tag=buffoon.boss_orbit] rotated as @n[type=marker,tag=buffoon.boss_orbit] positioned ^ ^ ^9 run tp @n[type=mannequin,tag=buffoon.boss] ~ ~ ~
+execute as @n[type=mannequin,tag=buffoon.boss] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..120] feet
+execute at @n[type=mannequin,tag=buffoon.boss] run tp @n[type=zombie,tag=buffoon.boss_hitbox] ~ ~ ~
+execute as @n[type=mannequin,tag=buffoon.boss] at @s rotated as @s positioned ^-1.0 ^2.86 ^1.2 run tp @n[type=item_display,tag=buffoon.boss_star] ~ ~ ~
+execute if score #state buffoon.boss matches ..2 as @e[type=end_crystal,tag=buffoon.boss_crystal] run function buffoon:boss/crystal_beam
+execute if score #state buffoon.boss matches 3.. as @e[type=end_crystal,tag=buffoon.boss_crystal] run function buffoon:boss/crystal_beam_star
+execute if score #state buffoon.boss matches 3..4 if score #alive_comet buffoon.boss matches 1 as @n[type=marker,tag=buffoon.boss_pillar_comet] at @s positioned ~ ~2.6 ~ facing entity @n[type=item_display,tag=buffoon.boss_star] feet run function buffoon:boss/stream_go {c:"[1.0,0.75,0.2]",p:"minecraft:wax_on"}
+execute if score #state buffoon.boss matches 3..4 if score #alive_gas_giant buffoon.boss matches 1 as @n[type=marker,tag=buffoon.boss_pillar_gas_giant] at @s positioned ~ ~2.6 ~ facing entity @n[type=item_display,tag=buffoon.boss_star] feet run function buffoon:boss/stream_go {c:"[0.85,0.85,0.3]",p:"minecraft:spore_blossom_air"}
+execute if score #state buffoon.boss matches 3..4 if score #alive_mars buffoon.boss matches 1 as @n[type=marker,tag=buffoon.boss_pillar_mars] at @s positioned ~ ~2.6 ~ facing entity @n[type=item_display,tag=buffoon.boss_star] feet run function buffoon:boss/stream_go {c:"[0.95,0.3,0.15]",p:"minecraft:crimson_spore"}
+execute if score #state buffoon.boss matches 3..4 if score #alive_water_planet buffoon.boss matches 1 as @n[type=marker,tag=buffoon.boss_pillar_water_planet] at @s positioned ~ ~2.6 ~ facing entity @n[type=item_display,tag=buffoon.boss_star] feet run function buffoon:boss/stream_go {c:"[0.3,0.85,1.0]",p:"minecraft:nautilus"}
+execute at @n[type=item_display,tag=buffoon.boss_star] run particle minecraft:glow ~ ~ ~ 0.3 0.3 0.3 0 1 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] run bossbar set buffoon:boss players @a[distance=..150,gamemode=!spectator]

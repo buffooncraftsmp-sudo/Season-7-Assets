@@ -1,0 +1,1 @@
+give @s minecraft:waxed_lightning_rod[minecraft:custom_name={text:"Pump Nozzle",color:"#D8D040",italic:false,bold:true},minecraft:lore=[{text:"Admin block - the pump sucks water up into this",color:"gray",italic:true}],minecraft:custom_data={buffoon_pump:"nozzle"},minecraft:enchantment_glint_override=true,minecraft:max_stack_size=1]

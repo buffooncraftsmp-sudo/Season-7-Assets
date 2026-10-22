@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:ochre_froglight"
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:ochre_froglight",
+                "components": {
+                  "minecraft:custom_data": {
+                    "buffoon_stone": "comet"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "buffoon:stones/comet/placed"
+  }
+}

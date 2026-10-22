@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:lime_stained_glass"
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:lime_stained_glass",
+                "components": {
+                  "minecraft:custom_data": {
+                    "buffoon_ufo": "emitter"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "buffoon:ufo/emitter/placed"
+  }
+}

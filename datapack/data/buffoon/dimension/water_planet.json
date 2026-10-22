@@ -1,0 +1,11 @@
+{
+  "type": "buffoon:water_planet",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "buffoon:water_planet"
+    },
+    "settings": "buffoon:water_planet"
+  }
+}

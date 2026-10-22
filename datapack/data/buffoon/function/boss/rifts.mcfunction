@@ -1,0 +1,15 @@
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~32 ~0 run particle minecraft:reverse_portal ~ ~ ~ 1.2 1.2 1.2 0.05 12 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~32 ~0 run particle minecraft:flame ~ ~ ~ 0.8 0.8 0.8 0.02 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~32 ~0 run particle minecraft:dust{color:[1.0,0.45,0.1],scale:2.5f} ~ ~ ~ 1 1 1 0 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~22 ~26 ~0 run particle minecraft:reverse_portal ~ ~ ~ 1.2 1.2 1.2 0.05 12 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~22 ~26 ~0 run particle minecraft:flame ~ ~ ~ 0.8 0.8 0.8 0.02 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~22 ~26 ~0 run particle minecraft:dust{color:[1.0,0.45,0.1],scale:2.5f} ~ ~ ~ 1 1 1 0 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~-22 ~26 ~0 run particle minecraft:reverse_portal ~ ~ ~ 1.2 1.2 1.2 0.05 12 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~-22 ~26 ~0 run particle minecraft:flame ~ ~ ~ 0.8 0.8 0.8 0.02 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~-22 ~26 ~0 run particle minecraft:dust{color:[1.0,0.45,0.1],scale:2.5f} ~ ~ ~ 1 1 1 0 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~26 ~22 run particle minecraft:reverse_portal ~ ~ ~ 1.2 1.2 1.2 0.05 12 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~26 ~22 run particle minecraft:flame ~ ~ ~ 0.8 0.8 0.8 0.02 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~26 ~22 run particle minecraft:dust{color:[1.0,0.45,0.1],scale:2.5f} ~ ~ ~ 1 1 1 0 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~26 ~-22 run particle minecraft:reverse_portal ~ ~ ~ 1.2 1.2 1.2 0.05 12 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~26 ~-22 run particle minecraft:flame ~ ~ ~ 0.8 0.8 0.8 0.02 4 force @a
+execute at @n[type=marker,tag=buffoon.boss_center] positioned ~0 ~26 ~-22 run particle minecraft:dust{color:[1.0,0.45,0.1],scale:2.5f} ~ ~ ~ 1 1 1 0 4 force @a

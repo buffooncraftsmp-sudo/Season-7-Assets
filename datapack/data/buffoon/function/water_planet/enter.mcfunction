@@ -1,0 +1,5 @@
+attribute @s minecraft:water_movement_efficiency modifier remove buffoon:water_planet_water_movement_efficiency
+attribute @s minecraft:water_movement_efficiency modifier add buffoon:water_planet_water_movement_efficiency 0.5 add_value
+attribute @s minecraft:submerged_mining_speed modifier remove buffoon:water_planet_submerged_mining_speed
+attribute @s minecraft:submerged_mining_speed modifier add buffoon:water_planet_submerged_mining_speed 0.8 add_value
+tag @s add buffoon.on_water_planet

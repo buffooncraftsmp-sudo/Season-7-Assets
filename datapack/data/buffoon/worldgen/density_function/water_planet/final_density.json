@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:max",
+  "left": {
+    "type": "minecraft:sub",
+    "left": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:add",
+        "left": {
+          "type": "minecraft:gradient",
+          "axis": "y",
+          "from_coordinate": 0,
+          "from_value": 3.125,
+          "to_coordinate": 128,
+          "to_value": -4.875
+        },
+        "right": {
+          "type": "minecraft:mul",
+          "left": {
+            "type": "minecraft:noise",
+            "noise": "minecraft:erosion",
+            "xz_scale": 0.5,
+            "y_scale": 0.0
+          },
+          "right": 0.6
+        }
+      },
+      "right": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:noise",
+          "noise": "minecraft:surface",
+          "xz_scale": 1.0,
+          "y_scale": 1.0
+        },
+        "right": 0.25
+      }
+    },
+    "right": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:max",
+        "left": {
+          "type": "minecraft:sub",
+          "left": 0.035,
+          "right": {
+            "type": "minecraft:abs",
+            "input": {
+              "type": "minecraft:noise",
+              "noise": "minecraft:ridge",
+              "xz_scale": 0.35,
+              "y_scale": 0.0
+            }
+          }
+        },
+        "right": 0.0
+      },
+      "right": 75.0
+    }
+  },
+  "right": {
+    "type": "minecraft:gradient",
+    "axis": "y",
+    "from_coordinate": 0,
+    "from_value": 1.0,
+    "to_coordinate": 8,
+    "to_value": -1.0
+  }
+}

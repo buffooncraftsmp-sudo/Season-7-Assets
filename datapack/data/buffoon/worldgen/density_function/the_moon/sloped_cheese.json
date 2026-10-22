@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "left": "buffoon:the_moon/islands",
+  "right": "minecraft:end/base_3d_noise"
+}
