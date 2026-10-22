@@ -29,14 +29,14 @@
     }
   },
   "display": {
-    "description": "Find Nova's plushie. There's a farm in here somewhere",
+    "description": "Find Nova's plushie. Softer landing than usual",
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
         "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\"}}"
       }
     },
-    "title": "Hidden in Plain Sight"
+    "title": "Fell From a High Place"
   },
   "requirements": [
     [

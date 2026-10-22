@@ -42,14 +42,14 @@
     }
   },
   "display": {
-    "description": "Find Flying Villager's plushie. He wrote this bit",
+    "description": "Find Flying Villager's plushie. Handle with care, he's in a mood",
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
         "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\"}}"
       }
     },
-    "title": "Plot Twist"
+    "title": "Angry Villager Noises"
   },
   "requirements": [
     [
