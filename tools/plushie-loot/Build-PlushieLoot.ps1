@@ -213,8 +213,13 @@ $($entries -join ",`n")
     $fullSetCriteria = @()
     $fullSetRequirements = @()
     foreach ($p in $plushies) {
-        $fullSetCriteria += "    `"$($p.Id)_tagged`": $(Get-PlushieCriterion "{buffooncraft_plushie:`"$($p.Id)`"}")"
-        $fullSetCriteria += "    `"$($p.Id)_owner`": $(Get-PlushieCriterion "{PlushieOwner:{name:`"$($p.Owner)`"}}")"
+        # Build the SNBT first - nesting quotes inside "$( )" truncates the argument.
+        $taggedSnbt = '{buffooncraft_plushie:"' + $p.Id + '"}'
+        $ownerSnbt  = '{PlushieOwner:{name:"' + $p.Owner + '"}}'
+        $tagged = Get-PlushieCriterion $taggedSnbt
+        $owned  = Get-PlushieCriterion $ownerSnbt
+        $fullSetCriteria += "    `"$($p.Id)_tagged`": $tagged"
+        $fullSetCriteria += "    `"$($p.Id)_owner`": $owned"
         $fullSetRequirements += "    [`n      `"$($p.Id)_tagged`",`n      `"$($p.Id)_owner`"`n    ]"
     }
 
@@ -242,8 +247,18 @@ $($fullSetRequirements -join ",`n")
 }
 "@
 
-    # Sanity-check every advancement parses before moving on.
-    Get-ChildItem $advDir -Filter '*.json' | ForEach-Object { $null = Get-Content $_.FullName -Raw | ConvertFrom-Json }
+    # Sanity-check every advancement parses, and that every custom_data SNBT is a closed compound
+    # (valid JSON can still carry broken SNBT, which fails the whole datapack in-game).
+    Get-ChildItem $advDir -Filter '*.json' | ForEach-Object {
+        $raw = Get-Content $_.FullName -Raw
+        $null = $raw | ConvertFrom-Json
+        foreach ($m in [regex]::Matches($raw, '"minecraft:custom_data": "((?:[^"\\]|\\.)*)"')) {
+            $snbt = $m.Groups[1].Value
+            if (($snbt.Split('{').Count -ne $snbt.Split('}').Count) -or $snbt -notmatch ':\\"[^\\]+\\"\}') {
+                throw "$($_.Name): malformed custom_data SNBT: $snbt"
+            }
+        }
+    }
     Write-Log "Built 2 advancement(s) in ${namespace}:plushies/"
 
     # --- Vanilla chest overrides ----------------------------------------------

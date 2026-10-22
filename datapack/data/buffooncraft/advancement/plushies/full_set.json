@@ -7,7 +7,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"angelbyu\"}"
             }
           }
         ]
@@ -20,7 +20,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"AngelByU\"}}"
             }
           }
         ]
@@ -33,7 +33,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"callmeevegaming\"}"
             }
           }
         ]
@@ -46,7 +46,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"CallMeEveGaming\"}}"
             }
           }
         ]
@@ -59,7 +59,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"doranoob\"}"
             }
           }
         ]
@@ -72,7 +72,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Doranoob\"}}"
             }
           }
         ]
@@ -85,7 +85,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"flyingvillager\"}"
             }
           }
         ]
@@ -98,7 +98,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\"}}"
             }
           }
         ]
@@ -111,7 +111,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"foolishsage\"}"
             }
           }
         ]
@@ -124,7 +124,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"FoolishSage\"}}"
             }
           }
         ]
@@ -137,7 +137,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"korny46\"}"
             }
           }
         ]
@@ -150,7 +150,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"korny46\"}}"
             }
           }
         ]
@@ -163,7 +163,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"kylady35\"}"
             }
           }
         ]
@@ -176,7 +176,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Kylady35\"}}"
             }
           }
         ]
@@ -189,7 +189,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"lonestarr_82\"}"
             }
           }
         ]
@@ -202,7 +202,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Lonestarr_82\"}}"
             }
           }
         ]
@@ -215,7 +215,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"luxjgaming\"}"
             }
           }
         ]
@@ -228,7 +228,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"LuxJGaming\"}}"
             }
           }
         ]
@@ -241,7 +241,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"opg8\"}"
             }
           }
         ]
@@ -254,7 +254,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"OPG8\"}}"
             }
           }
         ]
@@ -267,7 +267,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"princess_nebula\"}"
             }
           }
         ]
@@ -280,7 +280,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"princess_nebula\"}}"
             }
           }
         ]
@@ -293,7 +293,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"shutmountain409\"}"
             }
           }
         ]
@@ -306,7 +306,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"ShutMountain409\"}}"
             }
           }
         ]
@@ -319,7 +319,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"supernova_relic\"}"
             }
           }
         ]
@@ -332,7 +332,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\"}}"
             }
           }
         ]
@@ -345,7 +345,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"theskipjack81\"}"
             }
           }
         ]
@@ -358,7 +358,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"TheSkipJack81\"}}"
             }
           }
         ]
@@ -371,7 +371,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{buffooncraft_plushie:"
+              "minecraft:custom_data": "{buffooncraft_plushie:\"thunderhand64\"}"
             }
           }
         ]
@@ -384,7 +384,7 @@
           {
             "items": "plushie_friends:plushie",
             "predicates": {
-              "minecraft:custom_data": "{PlushieOwner:{name:"
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Thunderhand64\"}}"
             }
           }
         ]
