@@ -211,6 +211,40 @@ $($entries -join ",`n")
 }
 "@
 
+    # Granted alongside the root so players learn there's a whole set to hunt for.
+    # The per-plushie advancements and the full set hang off this one.
+    $hintId = "${namespace}:plushies/more_to_find"
+    Write-JsonText (Join-Path $advDir 'more_to_find.json') @"
+{
+  "parent": "$rootId",
+  "criteria": {
+    "any_plushie": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "$($plushies.Count) Buffoons are hiding in chests across the world. Can you find them all?",
+    "frame": "goal",
+    "icon": {
+      "id": "plushie_friends:plushie"
+    },
+    "title": "There's More Out There"
+  },
+  "requirements": [
+    [
+      "any_plushie"
+    ]
+  ]
+}
+"@
+
     # Icon rendered with the owner's skin (the client resolves PlushieOwner.name).
     function Get-PlushieIcon {
         param([string]$Owner)
@@ -254,12 +288,13 @@ $($entries -join ",`n")
 
         Write-JsonText (Join-Path $advDir "$($p.Id).json") @"
 {
-  "parent": "$rootId",
+  "parent": "$hintId",
   "criteria": {
 $critJson
   },
   "display": {
     "description": "$description",
+    "hidden": true,
     "icon": $(Get-PlushieIcon $p.Owner),
     "title": "$title"
   },
@@ -277,7 +312,7 @@ $reqJson
 
     Write-JsonText (Join-Path $advDir 'full_set.json') @"
 {
-  "parent": "$rootId",
+  "parent": "$hintId",
   "criteria": {
 $($fullSetCriteria -join ",`n")
   },
@@ -311,7 +346,7 @@ $($fullSetRequirements -join ",`n")
             }
         }
     }
-    Write-Log "Built $($plushies.Count + 2) advancement(s) in ${namespace}:plushies/"
+    Write-Log "Built $($plushies.Count + 3) advancement(s) in ${namespace}:plushies/"
 
     # --- Vanilla chest overrides ----------------------------------------------
     $outRoot = Join-Path $DatapackDir 'data\minecraft\loot_table'

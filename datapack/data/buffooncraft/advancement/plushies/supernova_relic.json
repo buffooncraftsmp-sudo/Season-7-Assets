@@ -1,5 +1,5 @@
 {
-  "parent": "buffooncraft:plushies/first_found",
+  "parent": "buffooncraft:plushies/more_to_find",
   "criteria": {
     "tagged": {
       "conditions": {
@@ -30,6 +30,7 @@
   },
   "display": {
     "description": "Find Nova's plushie. Softer landing than usual",
+    "hidden": true,
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
