@@ -1,0 +1,1 @@
+execute as @a[advancements={buffoon:s7/stone_comet=true,buffoon:s7/stone_gas=true,buffoon:s7/stone_mars=true,buffoon:s7/stone_water=true,buffoon:s7/the_astronomer=false}] run advancement grant @s only buffoon:s7/the_astronomer

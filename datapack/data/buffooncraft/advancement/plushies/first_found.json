@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "any_plushie": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:gui/advancements/backgrounds/husbandry",
+    "description": "Find your first plushie",
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "buffoon:bc_logo"
+      }
+    },
+    "title": "I Choose You!"
+  },
+  "requirements": [
+    [
+      "any_plushie"
+    ]
+  ],
+  "rewards": {
+    "function": "buffooncraft:plushies/first_found"
+  }
+}

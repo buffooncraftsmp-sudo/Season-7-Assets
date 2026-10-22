@@ -1,0 +1,2 @@
+$execute if entity @e[type=marker,tag=buffoon.pump_pool_barrel] as @n[type=marker,tag=buffoon.pump_pool_barrel] at @s positioned ~ $(layer) ~ positioned ~ ~0.9 ~ facing entity @n[type=marker,tag=buffoon.pump_nozzle] feet run return run function buffoon:pump/beam_go
+$execute in buffoon:gas_giant positioned $(cx) $(layer) $(cz) positioned ~0.5 ~0.9 ~0.5 facing entity @n[type=marker,tag=buffoon.pump_nozzle] feet run function buffoon:pump/beam_go

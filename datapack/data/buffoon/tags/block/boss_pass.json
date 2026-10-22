@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:air",
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:bedrock",
+    "minecraft:ochre_froglight",
+    "minecraft:verdant_froglight",
+    "minecraft:shroomlight",
+    "minecraft:sea_lantern"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "buffooncraft:plushies/first_found",
+  "criteria": {
+    "any_plushie": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "15 Buffoons are hiding in chests across the world. Can you find them all?",
+    "frame": "goal",
+    "icon": {
+      "id": "plushie_friends:plushie"
+    },
+    "title": "There's More Out There"
+  },
+  "requirements": [
+    [
+      "any_plushie"
+    ]
+  ]
+}

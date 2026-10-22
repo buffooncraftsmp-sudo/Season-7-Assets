@@ -1,0 +1,1 @@
+execute as @e[type=mannequin,tag=buffoon.boss,limit=1] at @s run tellraw @a[distance=..150] [{text:"The Astronomer: ",color:"#B48CFF",bold:true},{text:"For an age I watched your little world. Fire, flood, noise, holes dug for no reason at all. Chaos.",color:"white",italic:true}]

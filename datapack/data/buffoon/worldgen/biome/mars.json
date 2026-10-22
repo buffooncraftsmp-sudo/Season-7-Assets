@@ -1,0 +1,66 @@
+{
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "additions": {
+        "sound": "minecraft:ambient.nether_wastes.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.nether_wastes.loop",
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2.0,
+        "sound": "minecraft:ambient.nether_wastes.mood",
+        "tick_delay": 6000
+      }
+    },
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.nether.nether_wastes"
+      }
+    },
+    "minecraft:visual/fog_color": "#330808",
+    "minecraft:visual/ambient_particles": {
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:crimson_spore"
+          },
+          "probability": 0.008
+        }
+      ],
+      "modifier": "append"
+    }
+  },
+  "carvers": [],
+  "downfall": 0.0,
+  "effects": {
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [
+      "buffoon:mars_crater"
+    ],
+    [
+      "buffoon:mars_boulder_granite",
+      "buffoon:mars_boulder_blackstone"
+    ],
+    [],
+    [],
+    [],
+    [
+      "buffoon:mars_granite",
+      "buffoon:mars_iron",
+      "buffoon:mars_subsurface_ice",
+      "buffoon:mars_magma"
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "has_precipitation": false,
+  "temperature": 2.0
+}

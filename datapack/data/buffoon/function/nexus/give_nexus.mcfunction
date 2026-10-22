@@ -1,0 +1,1 @@
+give @s minecraft:lodestone[minecraft:custom_name={text:"Celestial Nexus",color:"#B48CFF",italic:false,bold:true},minecraft:lore=[{text:"Admin block - the four stones focus their light here",color:"gray",italic:true}],minecraft:custom_data={buffoon_nexus:1b},minecraft:enchantment_glint_override=true,minecraft:max_stack_size=1]

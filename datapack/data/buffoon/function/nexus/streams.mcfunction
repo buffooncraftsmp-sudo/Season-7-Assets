@@ -1,0 +1,4 @@
+$execute as @e[type=marker,tag=buffoon.stone_comet,tag=!buffoon.core_stone,distance=..64] at @s run function buffoon:nexus/beam_go {c:"[1.0,0.75,0.2]",s:"$(s)",p1:"minecraft:wax_on",p2:"minecraft:end_rod"}
+$execute as @e[type=marker,tag=buffoon.stone_gas_giant,tag=!buffoon.core_stone,distance=..64] at @s run function buffoon:nexus/beam_go {c:"[0.85,0.85,0.3]",s:"$(s)",p1:"minecraft:spore_blossom_air",p2:"minecraft:sulfur_bubbles"}
+$execute as @e[type=marker,tag=buffoon.stone_mars,tag=!buffoon.core_stone,distance=..64] at @s run function buffoon:nexus/beam_go {c:"[0.95,0.3,0.15]",s:"$(s)",p1:"minecraft:crimson_spore",p2:"minecraft:small_flame"}
+$execute as @e[type=marker,tag=buffoon.stone_water_planet,tag=!buffoon.core_stone,distance=..64] at @s run function buffoon:nexus/beam_go {c:"[0.3,0.85,1.0]",s:"$(s)",p1:"minecraft:nautilus",p2:"minecraft:glow"}

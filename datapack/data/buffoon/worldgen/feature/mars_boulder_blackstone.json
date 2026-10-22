@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block_blob",
+  "state": "minecraft:blackstone",
+  "can_place_on": {
+    "type": "minecraft:matching_blocks",
+    "blocks": [
+      "minecraft:red_sand",
+      "minecraft:red_terracotta",
+      "minecraft:terracotta",
+      "minecraft:orange_terracotta",
+      "minecraft:basalt"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "minecraftJar": "%APPDATA%\\.minecraft\\versions\\26.3\\26.3.jar",
+  "namespace": "buffooncraft",
+  "defaultChance": 0.25,
+  "chanceOverrides": {
+    "chests/ancient_city": 0.4,
+    "chests/bastion_treasure": 0.4,
+    "chests/buried_treasure": 0.4,
+    "chests/end_city_treasure": 0.4,
+    "chests/woodland_mansion": 0.4,
+    "chests/stronghold_library": 0.4,
+    "chests/shipwreck_treasure": 0.4,
+    "chests/jungle_temple": 0.4,
+    "chests/desert_pyramid": 0.4
+  },
+  "sherds": {
+    "defaultChance": 0.3,
+    "chanceOverrides": {}
+  },
+  "advancements": {
+    "angelbyu":        { "title": "What a Ride",            "description": "Find Angel's plushie. Keep your hands inside the rollercoaster" },
+    "callmeevegaming": { "title": "Straight to the Point",  "description": "Find Eve's plushie. No beating around the bush" },
+    "doranoob":        { "title": "Dines of Dora",          "description": "Find Dora's plushie. Dig deep enough and you'll find anything" },
+    "flyingvillager":  { "title": "Angry Villager Noises",  "description": "Find Flying Villager's plushie. Handle with care, he's in a mood" },
+    "foolishsage":     { "title": "Moving Mountains",       "description": "Find Sage's plushie. It was under a mountain the whole time" },
+    "korny46":         { "title": "Yo Ho Korny",            "description": "Find Korny's plushie. Follow the giant green skull" },
+    "kylady35":        { "title": "All Hail the Queen",     "description": "Find Kylady's plushie. Bow before Buffooncraft royalty" },
+    "lonestarr_82":    { "title": "You're Under Arrest",    "description": "Find Lone's plushie. Order has been kept" },
+    "luxjgaming":      { "title": "It Was Lux",             "description": "Find Lux's plushie. Whatever just happened, it was probably him" },
+    "opg8":            { "title": "Shroom With a View",     "description": "Find OPG's plushie, somewhere among the giant mushrooms" },
+    "princess_nebula": { "title": "The Grind Never Stops",  "description": "Find Nebs' plushie. She's probably got the full set already" },
+    "shutmountain409": { "title": "Go Big or Go Home",      "description": "Find Shut's plushie. Biggest builds, bigger heart" },
+    "supernova_relic": { "title": "Fell From a High Place", "description": "Find Nova's plushie. Softer landing than usual" },
+    "theskipjack81":   { "title": "Welcome to Java",        "description": "Find Skip's plushie. No Bedrock required" },
+    "thunderhand64":   { "title": "Och!",                   "description": "Find ThunderHand's plushie. Measured to the block, palette perfect" }
+  },
+  "includeTables": [
+    "chests/*",
+    "barrels/*"
+  ],
+  "excludeTables": [
+    "chests/spawn_bonus_chest",
+    "chests/jungle_temple_dispenser",
+    "chests/trial_chambers/reward*"
+  ]
+}

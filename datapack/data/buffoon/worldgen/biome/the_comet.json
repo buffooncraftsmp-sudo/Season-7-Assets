@@ -1,0 +1,45 @@
+{
+  "attributes": {
+    "minecraft:visual/ambient_particles": {
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:wax_on"
+          },
+          "probability": 0.004
+        }
+      ],
+      "modifier": "append"
+    }
+  },
+  "carvers": [],
+  "downfall": 0.5,
+  "effects": {
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [
+      "buffoon:comet_crater"
+    ],
+    [
+      "buffoon:comet_boulder_gilded",
+      "buffoon:comet_boulder_ice"
+    ],
+    [],
+    [],
+    [],
+    [
+      "buffoon:ore_gilded_blackstone",
+      "buffoon:comet_raw_gold",
+      "buffoon:comet_gold_core",
+      "buffoon:comet_blue_ice"
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "has_precipitation": false,
+  "temperature": 0.5
+}
