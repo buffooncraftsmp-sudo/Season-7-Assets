@@ -6,122 +6,212 @@
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:angelbyu"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:angelbyu"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"angelbyu\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:callmeevegaming"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:callmeevegaming"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"callmeevegaming\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:doranoob"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:doranoob"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"doranoob\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:flyingvillager"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:flyingvillager"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"flyingvillager\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:foolishsage"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:foolishsage"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"foolishsage\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:korny46"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:korny46"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"korny46\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:kylady35"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:kylady35"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"kylady35\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:lonestarr_82"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:lonestarr_82"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"lonestarr_82\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:luxjgaming"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:luxjgaming"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"luxjgaming\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:opg8"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:opg8"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"opg8\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:princess_nebula"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:princess_nebula"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"princess_nebula\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:shutmountain409"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:shutmountain409"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"shutmountain409\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:supernova_relic"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:supernova_relic"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"supernova_relic\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:theskipjack81"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:theskipjack81"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"theskipjack81\"}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "plushie_friends:plushie",
-          "modifier": {
-            "type": "plushie_friends:set_plushie",
-            "id": "buffooncraft:thunderhand64"
-          }
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:thunderhand64"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"thunderhand64\"}"
+            }
+          ]
         }
       ],
       "rolls": 1

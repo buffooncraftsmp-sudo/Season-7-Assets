@@ -1,0 +1,47 @@
+{
+  "parent": "buffooncraft:plushies/root",
+  "criteria": {
+    "tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"shutmountain409\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"ShutMountain409\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Find ShutMountain409's plushie",
+    "icon": {
+      "id": "plushie_friends:plushie",
+      "components": {
+        "minecraft:custom_data": "{PlushieOwner:{name:\"ShutMountain409\"}}"
+      }
+    },
+    "title": "ShutMountain409"
+  },
+  "requirements": [
+    [
+      "tagged",
+      "owner"
+    ]
+  ]
+}

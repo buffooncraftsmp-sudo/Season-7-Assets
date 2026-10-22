@@ -1,0 +1,471 @@
+{
+  "parent": "buffooncraft:plushies/root",
+  "criteria": {
+    "angelbyu_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"angelbyu\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "angelbyu_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"AngelByU\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "callmeevegaming_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"callmeevegaming\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "callmeevegaming_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"CallMeEveGaming\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "doranoob_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"doranoob\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "doranoob_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Doranoob\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "flyingvillager_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"flyingvillager\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "flyingvillager_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "foolishsage_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"foolishsage\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "foolishsage_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"FoolishSage\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "korny46_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"korny46\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "korny46_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"korny46\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "kylady35_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"kylady35\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "kylady35_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Kylady35\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "lonestarr_82_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"lonestarr_82\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "lonestarr_82_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Lonestarr_82\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "luxjgaming_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"luxjgaming\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "luxjgaming_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"LuxJGaming\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "opg8_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"opg8\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "opg8_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"OPG8\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "princess_nebula_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"princess_nebula\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "princess_nebula_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"princess_nebula\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "shutmountain409_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"shutmountain409\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "shutmountain409_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"ShutMountain409\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "supernova_relic_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"supernova_relic\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "supernova_relic_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "theskipjack81_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"theskipjack81\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "theskipjack81_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"TheSkipJack81\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "thunderhand64_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"thunderhand64\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "thunderhand64_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"Thunderhand64\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Collect all 15 plushies",
+    "frame": "challenge",
+    "icon": {
+      "id": "plushie_friends:plushie",
+      "components": {
+        "minecraft:custom_data": "{PlushieOwner:{name:\"Thunderhand64\"}}"
+      }
+    },
+    "title": "Plushie Collector"
+  },
+  "requirements": [
+    [
+      "angelbyu_tagged",
+      "angelbyu_owner"
+    ],
+    [
+      "callmeevegaming_tagged",
+      "callmeevegaming_owner"
+    ],
+    [
+      "doranoob_tagged",
+      "doranoob_owner"
+    ],
+    [
+      "flyingvillager_tagged",
+      "flyingvillager_owner"
+    ],
+    [
+      "foolishsage_tagged",
+      "foolishsage_owner"
+    ],
+    [
+      "korny46_tagged",
+      "korny46_owner"
+    ],
+    [
+      "kylady35_tagged",
+      "kylady35_owner"
+    ],
+    [
+      "lonestarr_82_tagged",
+      "lonestarr_82_owner"
+    ],
+    [
+      "luxjgaming_tagged",
+      "luxjgaming_owner"
+    ],
+    [
+      "opg8_tagged",
+      "opg8_owner"
+    ],
+    [
+      "princess_nebula_tagged",
+      "princess_nebula_owner"
+    ],
+    [
+      "shutmountain409_tagged",
+      "shutmountain409_owner"
+    ],
+    [
+      "supernova_relic_tagged",
+      "supernova_relic_owner"
+    ],
+    [
+      "theskipjack81_tagged",
+      "theskipjack81_owner"
+    ],
+    [
+      "thunderhand64_tagged",
+      "thunderhand64_owner"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

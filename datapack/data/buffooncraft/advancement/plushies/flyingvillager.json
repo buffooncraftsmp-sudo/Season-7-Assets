@@ -1,0 +1,47 @@
+{
+  "parent": "buffooncraft:plushies/root",
+  "criteria": {
+    "tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"flyingvillager\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Find FlyingVillager's plushie",
+    "icon": {
+      "id": "plushie_friends:plushie",
+      "components": {
+        "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\"}}"
+      }
+    },
+    "title": "FlyingVillager"
+  },
+  "requirements": [
+    [
+      "tagged",
+      "owner"
+    ]
+  ]
+}

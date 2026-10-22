@@ -1,0 +1,47 @@
+{
+  "parent": "buffooncraft:plushies/root",
+  "criteria": {
+    "tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"supernova_relic\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Find supernova_relic's plushie",
+    "icon": {
+      "id": "plushie_friends:plushie",
+      "components": {
+        "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\"}}"
+      }
+    },
+    "title": "supernova_relic"
+  },
+  "requirements": [
+    [
+      "tagged",
+      "owner"
+    ]
+  ]
+}
