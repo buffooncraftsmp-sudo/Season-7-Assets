@@ -13,6 +13,10 @@
     "chests/jungle_temple": 0.4,
     "chests/desert_pyramid": 0.4
   },
+  "sherds": {
+    "defaultChance": 0.3,
+    "chanceOverrides": {}
+  },
   "advancements": {
     "angelbyu":        { "title": "What a Ride",            "description": "Find Angel's plushie. Keep your hands inside the rollercoaster" },
     "callmeevegaming": { "title": "Straight to the Point",  "description": "Find Eve's plushie. No beating around the bush" },

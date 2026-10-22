@@ -14,7 +14,8 @@
        reward functions. Each plushie matches on our tag OR PlushieOwner.name, so
        one that has been placed and broken (which drops our tag) still counts.
     3. Pulls each matching vanilla chest loot table out of the Minecraft client jar,
-       injects one extra pool ("chance" roll -> all_plushies) and writes it to
+       injects a "chance" roll for all_plushies and one for <namespace>:sherds/all_sherds
+       (every pottery sherd in that version, read from the jar), and writes it to
        datapack/data/minecraft/loot_table/. Vanilla pools are kept byte-for-byte.
 
     Lootr reads the same loot table IDs, so every player rolls the plushie pool
@@ -358,13 +359,67 @@ $($fullSetRequirements -join ",`n")
     $written = 0
 
     try {
+        # --- Sherd pool: every *_pottery_sherd item in this Minecraft version, equal weight ---
+        $sherds = @($zip.Entries | Where-Object { $_.FullName -match '^assets/minecraft/items/([a-z_]+_pottery_sherd)\.json$' } |
+            ForEach-Object { $Matches[1] } | Sort-Object -Unique)
+        if ($sherds.Count -eq 0) { throw 'No pottery sherds found in the Minecraft jar.' }
+        $sherdEntries = $sherds | ForEach-Object { "        {`n          `"type`": `"minecraft:item`",`n          `"name`": `"minecraft:$_`"`n        }" }
+        Write-JsonText (Join-Path $DatapackDir "data\$namespace\loot_table\sherds\all_sherds.json") @"
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+$($sherdEntries -join ",`n")
+      ],
+      "rolls": 1
+    }
+  ]
+}
+"@
+        Write-Log "Built ${namespace}:sherds/all_sherds with $($sherds.Count) sherd(s)"
+
+        # Each injection adds one "chance" roll into its pool. Config: plushies use the top-level
+        # defaultChance/chanceOverrides, sherds use the "sherds" block.
+        $sherdOverrides = @{}
+        $sherdDefault = 0
+        if ($config.PSObject.Properties['sherds']) {
+            $sherdDefault = [double]$config.sherds.defaultChance
+            foreach ($prop in $config.sherds.chanceOverrides.PSObject.Properties) { $sherdOverrides[$prop.Name] = [double]$prop.Value }
+        }
+        $injections = @(
+            @{ Name = 'plushie'; Pool = $poolId;                      Default = [double]$config.defaultChance; Overrides = $chanceOverrides },
+            @{ Name = 'sherd';   Pool = "${namespace}:sherds/all_sherds"; Default = $sherdDefault;                 Overrides = $sherdOverrides }
+        )
+
         foreach ($entry in $zip.Entries | Where-Object { $_.FullName.StartsWith($prefix) -and $_.FullName.EndsWith('.json') }) {
             $tableId = $entry.FullName.Substring($prefix.Length) -replace '\.json$', ''
             if (-not (Test-AnyMatch $tableId $config.includeTables)) { continue }
             if (Test-AnyMatch $tableId $config.excludeTables) { continue }
 
-            $chance = if ($chanceOverrides.ContainsKey($tableId)) { $chanceOverrides[$tableId] } else { [double]$config.defaultChance }
-            if ($chance -le 0) { Write-Log "Skipping minecraft:$tableId (chance 0)"; continue }
+            $pools = @(); $summary = @()
+            foreach ($inj in $injections) {
+                $chance = if ($inj.Overrides.ContainsKey($tableId)) { $inj.Overrides[$tableId] } else { $inj.Default }
+                if ($chance -le 0) { continue }
+                $chanceText = $chance.ToString([Globalization.CultureInfo]::InvariantCulture)
+                $pools += @"
+    {
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": $chanceText
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "$($inj.Pool)"
+        }
+      ],
+      "rolls": 1
+    },
+"@.TrimEnd()
+                $summary += ('{0} {1:P1}' -f $inj.Name, $chance)
+            }
+            if ($pools.Count -eq 0) { Write-Log "Skipping minecraft:$tableId (all chances 0)"; continue }
 
             $reader = New-Object IO.StreamReader($entry.Open())
             try { $vanilla = $reader.ReadToEnd() } finally { $reader.Dispose() }
@@ -374,29 +429,12 @@ $($fullSetRequirements -join ",`n")
             $hits = ([regex]::Matches($vanilla, [regex]::Escape($marker))).Count
             if ($hits -ne 1) { Write-Log "Skipping minecraft:${tableId} - expected 1 pools array, found $hits" 'WARN'; continue }
 
-            $chanceText = $chance.ToString([Globalization.CultureInfo]::InvariantCulture)
-            $pool = @"
-$marker
-    {
-      "condition": {
-        "type": "minecraft:random_chance",
-        "chance": $chanceText
-      },
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "value": "$poolId"
-        }
-      ],
-      "rolls": 1
-    },
-"@
-            $patched = $vanilla.Replace($marker, $pool.TrimEnd())
+            $patched = $vanilla.Replace($marker, $marker + "`n" + ($pools -join "`n"))
             $null = $patched | ConvertFrom-Json   # throws if we produced invalid JSON
 
             Write-JsonText (Join-Path $outRoot ($tableId + '.json')) $patched
             $written++
-            Write-Log ("minecraft:{0} <- {1:P1}" -f $tableId, $chance)
+            Write-Log ("minecraft:{0} <- {1}" -f $tableId, ($summary -join ', '))
         }
     }
     finally {
