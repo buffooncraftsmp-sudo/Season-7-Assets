@@ -1,7 +1,7 @@
 kill @e[tag=buffoon.boss_body]
 kill @e[tag=buffoon.boss_orbit]
 summon marker ~ ~ ~ {Tags:["buffoon.boss_orbit","buffoon.boss_ent"]}
-summon mannequin ~ ~12 ~12 {Tags:["buffoon.boss","buffoon.boss_body","buffoon.boss_ent"],CustomName:{text:"The Astronomer",color:"#B48CFF",bold:true},CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,attributes:[{id:"minecraft:scale",base:2.22}],equipment:{mainhand:{id:"minecraft:nether_star",count:1}}}
+summon mannequin ~ ~12 ~12 {Tags:["buffoon.boss","buffoon.boss_body","buffoon.boss_ent"],hide_description:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,attributes:[{id:"minecraft:scale",base:2.22}],equipment:{mainhand:{id:"minecraft:nether_star",count:1}}}
 execute if score #skin buffoon.boss matches 1 run function buffoon:boss/apply_skin
 execute positioned ~ ~12 ~12 run summon zombie ~ ~ ~ {Tags:["buffoon.boss_hitbox","buffoon.boss_body","buffoon.boss_ent"],NoAI:1b,Silent:1b,PersistenceRequired:1b,NoGravity:1b,CanPickUpLoot:0b,IsBaby:0b,DeathLootTable:"minecraft:empty",Health:1000f,attributes:[{id:"minecraft:max_health",base:1000},{id:"minecraft:scale",base:2.05},{id:"minecraft:knockback_resistance",base:1}],active_effects:[{id:"minecraft:invisibility",duration:-1,amplifier:0,show_particles:0b},{id:"minecraft:fire_resistance",duration:-1,amplifier:0,show_particles:0b}]}
 summon item_display ~ ~14 ~12 {Tags:["buffoon.boss_star","buffoon.boss_body","buffoon.boss_ent"],item:{id:"minecraft:nether_star",count:1},Glowing:1b,glow_color_override:11832575,teleport_duration:1,brightness:{sky:15,block:15},billboard:"center",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.9f,0.9f,0.9f]}}

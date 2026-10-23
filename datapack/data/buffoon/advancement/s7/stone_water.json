@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:sea_lantern",
+      "id": "minecraft:conduit",
       "components": {
         "minecraft:enchantment_glint_override": true
       }
