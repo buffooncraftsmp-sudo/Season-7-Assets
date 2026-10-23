@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"FoolishSage\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"FoolishSage\",id:[I;-293140362,1614891998,-1169126208,-1534076463],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0Mzc0NTQ0MCwKICAicHJvZmlsZUlkIiA6ICJlZTg3MDg3NjYwNDE0YmRlYmE1MDhjYzBhNDhmZDlkMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJGb29saXNoU2FnZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hNTAzYjQ1Y2Y4MDQwYTczZTQzMWM5YmI3NGFkNTE5ZmZjZDU3ZDZjZWMxZjYwMTI5MDg4NGUyYzgxOTU3OTU1IgogICAgfQogIH0KfQ==\",signature:\"HjnHIltu17g3F5wZME5CX15CavXs85RisF/81s3cH+K8/dGU9EESpQCIUVoUD7qLvu1zUB/MjYf40tbsPw3azQ3c42FmDRla92mJbE2QgVKAe+WipA9lUZ+z5tIvBkM7e4KwmUYCD32gFDRe/X0basz4sE1vzHOvSk1Pv3bEClQitnY4tAhE3fffzNOmV9LRckWZN+P3g7YSgWssahSeAIwrH7V7V0IPECh1a9u6wwWoJ+S7C1ZDlnKLO/GVUs2Ylo0RTgJ0AMXCCq/riAD1GxtOIjY6wo4x7uCheLHA68hkWxGLCDPmLRFLF8RP2TYvJqe5Kl0BkKQpKAwcAvmyoY3wI3uclASVOQh38B7Lj+QokxkSfhaxKxkbgEqFE8tNiYWzdJahx/kE3i4zzyLgsHoyldl5JaG8j65I7ShuvkKScmweVnb7tF3d/hQc9PrI3nE/vAXt6SKqTqxGX7SvuMdQZCWdQwMG275ri+Cb9r09r3nxTWtCa7rFWz9CWzOYC3ZYzzVjHNi/LnEagxn43Ik/ms7qYAX7h/yY7MOYYBl+AcgmVNBbNGOtwICTj2ANYNjVvL9f40+C/kIkiEVMJOvPWL81acDC7Jb3OV3SBtswHC8cuClJbFJBABfhC9NPZVz1L7NyRaDPrOlmNhA5yJVJ8Yr6SIyKeUGvvemlzHQ=\"}]}}"
       }
     },
     "title": "Moving Mountains"

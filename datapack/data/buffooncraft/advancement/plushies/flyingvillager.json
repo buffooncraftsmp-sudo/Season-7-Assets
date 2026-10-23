@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"FlyingVillager\",id:[I;-1695815701,294863917,-1384036297,-864871474],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0Mzc0NDg2MywKICAicHJvZmlsZUlkIiA6ICI5YWViZTdlYjExOTM0NDJkYWQ4MTQ4MzdjYzczMWJjZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJGbHlpbmdWaWxsYWdlciIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81ZmFmZTk1NjVjMDk1Y2RjMzE1YjhmZmJlNDMwOTFiYjJkNzVkODcxOGMxN2VkNzg2NjMwMGFjYjlkZmI1MDE2IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2M0MThkZmJkMzc0MTJhNTVlOWYxNDI1Yzk4MDdhNTkxYWQxMGNmNzFiMWVkYjU3NmE1ODdiZTkxMTRjMjc3ZiIKICAgIH0KICB9Cn0=\",signature:\"eeWQ07mmZA4Q4ZON8plme2rT+eaYN5xahmAxV7zfeMdc5Par0QL1S3clrCmYwvpQTeKk3r6aCKZzBN1KWrMfeDygr2TAvBgHcGR3h/gJyWml6i7LVrfM14uuax8c/7MXr1dwEOqdk8J3RGNGPhREmbBbQZJk+p8s+KRV2Bqk1XhSEdKV+0NC0MfSUoR8kYkzs+tZdQs3tBQAMuN00BUwt5dsVmD7/W/Yf881aK4lTD/5AAtEvoJRdQe4XODUWjmxPc5tv7BzPf1MMMyrnAmPydqik532JaN8hXe3J4jvX+Z0r65tCKzmCqruIUr6ulfvOAoz7UBvhfVsCCx8cdMgFEO088MOH/ORP51HBDYHifFlOJ9KrlK2JPfikki9ISPQwWtM/WL3E+zZrwOYQPF8Vm+CuuZF07maszx/VtS6XL1Uye5q0kfQCsuw4BmKh05MLEMk5UWzoP2OeZYOBQPliLtlk1dxg/o00+fxt27aFbBcVIY7kgwiYhO1VjXmIa17qpNf2VxuVCLTZT0qIdpd0C4dHr2PyFx+EH0sRoJl3XRY5yjLRGaCz+hTJoxYC8WjC7B13Ff0jS1dY0bf/KgcQHx78E3Vvmxf5UNfTV2IEKhiyNIwnhr6qEvMTuxWA6JzdekiXoU4AMs/y2pM6R5FBWb53ntfJacXQKiZe2MJVfQ=\"}]}}"
       }
     },
     "title": "Angry Villager Noises"

@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"AngelByU\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"AngelByU\",id:[I;868662502,2068922621,-1354759338,-1840294967],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0MzczNjQ3MiwKICAicHJvZmlsZUlkIiA6ICIzM2M2YmNlNjdiNTE0MGZkYWY0MDAzNTY5MjRmNTNjOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbmdlbEJ5VSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kNjE0YWNlZjMzNjllNGJkYWQ5NDY5MTBiNTlkZjhiODBkMGIxYzNlYTgxNTQ0NTAyNmEyNWFhNDA5YTY1MzM1IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=\",signature:\"OxJT2P2ZEypGkRMyTqAsJ24BnrZbOQZD8DsVDSAGlu2Ipdv1unugAYJpJSk48e4HkAo5dj4TAnk6fuZBvZ+N6gKOskdZ4brY1lgT9A0EHrosz8vvF9yGrQ15O9h+QBrLJDpt28kZGoV1cLqDsaZWA4Gt1x4ZbtDciVdF5Trdk6dHQnUqUP9gRWwF3fY2c/5NY5vp5ZAPm7quEnVqGkKYB/Zk5ptsS3rtdINVPeKdpy4y3Tay/psN5Ab8zs0BWSo/2vnyQKhwE9sp6VmWH0jbSp4EUID5oAqWhBPk4EzsAuV/efaKdOITMZbwlDQyuMimPd6ayh0Z5/+tjXwCdiSyZGK1jUoRqJ2pZtHY1G3rKbUcyPZbsYEBZRIrAmmEhpZXJYJXhQefHEzO/5xBnpKL6ryw9zd4nmOlIkHcdyOG5IIwzZ2qWAYh9+M49xoMNfUxiXLVY1Zhft6ycy6bizyjEZlS1Q1luKIHqUYE6hj950wKdJreNg0pyjn4qlUERpfgkYM/DPsxj+lkSblj/Akx0QSDMyEFKTTXbmSeLCZ0IVv2Mqafb90Dw0baVt/vgtLDCoycmQkpebBMu9oB0+OdGj9QbsXSn8/7IrNH4PyBsBgi0gGhYPqSjRXOLq/lzmza2jCx0xQ0rZKG98aFlJDCzHC6nf3Eax438898XIkfKb0=\"}]}}"
       }
     },
     "title": "What a Ride"

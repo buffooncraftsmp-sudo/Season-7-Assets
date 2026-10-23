@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"Lonestarr_82\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"Lonestarr_82\",id:[I;960784957,675368554,-1320349116,943961300],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0Mzc1MDk0MiwKICAicHJvZmlsZUlkIiA6ICIzOTQ0NmEzZDI4NDE0ZTZhYjE0ZDEyNDQzODQzYjRkNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb25lc3RhcnJfODIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA4N2U0OTUyOTEwMWZhODdmNGFlNmFhNGNjYjA5N2NmZTgxMmFlYzllM2E4NDZhZjJlN2U5ZjY0MzhjOWNlIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=\",signature:\"ljdCWAeCww51BhSbje+yX9rnIOxmz589sCeiR1JT9y2gjn6/eA0HCYKpbeFjfieQDOtszbGMgHNamKC8HK8D6Dr+M/dnUAmnKVw7x6zURWfPnbrcXCFSO/oQrrCEmq19yY7BNLf3MXIdXOyuo8sUaW44t8zOcl8C2QcSSw/f+/xwdtWEOYRuBS8R/GVeFfSthmZrfkFTebExUae99kRr80aJLKeYe3iC4DxcxPddpjmvLGqEE5+4VzXNkszPEVWsGNWZeVoXEY0+a+yMrrLJez+Wa9Oz+iWwXFWmN4/rqJAil+opKBAjb9mTts+blRlM96bXw08/LsX7G3f1+q8ZZOg/NuYHqvbZbyf5TuSloZnWWGGWDhI9U4s+qiDK19noWD5aFwLDWrF8B6lawPX9iXA5O1M7xzqsipQ/MPGIhj1OGylXNP34rGhBciWPIKQeeuBV+BzdNs1nw5Vkm1WQyCLrBDnTMxqCJOfDKO4NXniVwocKDs+ktvIYJPGqJEMe+Tt+SO+Aj9p/69aQyNBRpD5gC+rA/+VSkkNq1PaORcFx5/a4F5epjjnmqgMaRijnnfEnca1DmYnGvbPeUWbFHwRPj2qQlrDj3EHJ61s1+sqDCMB4rL06F6JkOSF/+k5LVoR4KQSBgSUs9NBav3iW8349vV8Ef1zmcXVUk14hkAI=\"}]}}"
       }
     },
     "title": "You're Under Arrest"

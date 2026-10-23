@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"CallMeEveGaming\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"CallMeEveGaming\",id:[I;1734796261,-537836199,-1506135048,-1259274599],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0MzczOTMzMSwKICAicHJvZmlsZUlkIiA6ICI2NzY2ZTNlNWRmZjE0NTU5YTYzYTMzZjhiNGYwZmU5OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJDYWxsTWVFdmVHYW1pbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M0NzllZGI5MjEwN2IyMjgwZGNlYzgwZjFkYmZiNThhMDA0MzljYWU3NTAxOGVkMjRmMzdjOTU4MmZmZGRjYSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9\",signature:\"KP3mWwQWUxz4I1CwYz2t21iSrStxR3QNLWRYm3F3qxaOSE5lwZqvJ7ZUbaP8wmdJleA/XdDnRaZePWvVOCq55qk1TsZxcaU82mw9BCNWdf9W7zJ/E3Xl8F06lS2bAPbYTDyacLw4HBoC+QR7OK2ucfL50I9AEk2gWva9SbElgPFgorxhB+pNs9lndlHBByidEjyZCbe/bBqshuC/Bb8NFTIJuUKNWEP6Ox8OCrH1ikVHB1GNSge9bsRYgaeDxOlOxC4bG00tdop8ih0g3S+Gr4C6LdEV4T7pKlQUJUXJsq7H4ypq0bR073P5PMnFpnGZzcMUQO6VMZl8ITmUd5lMJyv8atq8Hf72INzEOK8cxItyzj+he3ajdMB1DX4HCA6jA+vS/pM/cTR4X1HxucvTzNUuQtNZzS21MCIOuKiVEF1c32l3TgZte0TnUy5gHu+X1B8CHec1lY4771OMzMnVMV1a8keHggvtj9diECC9JCdbUB35qtSYBJZdmhlD48dQrMpZPP0DKMjQnOVsdtrxCVNdhzMQz/yMO3kg28QDYUnp7Vmzaa00kCJVJPDBX2inm7HQiUtVb8tCeXjw1U1/63S+NiRZUJyzZA4yjNxjfu7OEqAkmVJDVt+RdZkx+zqnaZ3Ye7H4TtFzhVwwCZNr4a6QpU8/AkZq12JJ3eLnI/g=\"}]}}"
       }
     },
     "title": "Straight to the Point"

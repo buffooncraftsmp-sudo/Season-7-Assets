@@ -34,7 +34,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"korny46\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"korny46\",id:[I;-381591674,-1841674082,-1675131253,-1742499595],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0Mzc1MDQ1MSwKICAicHJvZmlsZUlkIiA6ICJlOTQxNWY4NjkyM2E0ODllOWMyNzg2OGI5ODIzOTBmNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJrb3JueTQ2IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcyNGFmNDdmYzQ0NmI3YjkzOTg0ODBhNDQ3ZGFjZGViYjE3ZTc1NDRiMWE3YjE2MzI0NzhlMmIzMmRkMjlmN2MiCiAgICB9CiAgfQp9\",signature:\"t8nxuguXN2yeKWKfupZ5XaOXae94zLTrCUlcCdtMcu7ytdjt89tz21rID0fLQApVl8cN2AWrPO8h3bLSD3aSKTHk+67yWGvgZqbQf2QSMt1gbv9dXZZr14MZeh+f6YfWmnJmq+sjGfoBBl3vJpRe8iSh0VJIFCHlTlGZl2j+N6tR91FeK+x5T6TiTAlMD0zqg0MSTDsRs1tUVNLA53x1vJvfqMQPZME02RXuoncudjcoQIG/D6NMvT0cQ+dkkmvBEUzRzU6ukac9+7ba8kgLlC0Rnz1CDotiPn2vViAGcxPNSl6uGfhXsowrVnY1+pgJWkYjaKlZwPAgidqkCwiovd3LYznaWlgssTRRUbAPzTuazc0gKlDV5MUv8aJyKrRwbOJ48vA5suiUaJWIagV8k6IwbxMpmS9sUG4FubFFePxUeQWRD8WFRde3F3aPSBAWf0fodokveSHQZk5taSrPHGRzWYF0nqq4cPvikDIY3i9OtmiHCqqg3ZY81t6Y3kttZ5MK2Kcz+8jUjGYPwZi3l42VvLWBT68PN080pKu4nUZ10EF/4Mwv32llWSmr79pO7Ya2VOjfSrIruyVRN5ufX/Gnv0D13T6hAOwvBeQhP5VHji2uTY6iG6YH7Targ5omdyBBc8rKGiSQ6KI0boH4/cKps5/KQhtRlhTWv8UNOBY=\"}]}}"
       }
     },
     "title": "Yo Ho Korny"

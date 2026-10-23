@@ -34,7 +34,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"princess_nebula\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"princess_nebula\",id:[I;1892633969,437405639,-1448235250,-1928716274],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0Mzc1MTcwNCwKICAicHJvZmlsZUlkIiA6ICI3MGNmNGQ3MTFhMTI0N2M3YTlhZGFmMGU4ZDBhMjAwZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJwcmluY2Vzc19uZWJ1bGEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM3NDg0Y2I5Y2JmYTgyMzkwYjk4YTA0M2Y3NjNlMGNhYTY2N2E2MDk0NTc2NGVmNmYwYTU2YzlmMTM5YTI0MyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI4ZGU0YTgxNjg4YWQxOGI0OWU3MzVhMjczZTA4NmMxOGYxZTM5NjY5NTYxMjNjY2I1NzQwMzRjMDZmNWQzMzYiCiAgICB9CiAgfQp9\",signature:\"BOuPq1hTscTVP5NJKHKJpdiMCz/7r+YEk+Hs35S3KHLHqvEdlwl/PZtexKqJKfz53wPQyaBTdxykVu6MPh4z9Fux5JYd1g8faGDf3Yfx317hXwyrQrQQqkMTjU53mFxKofMqDxgzUfXxemUGM3ftNu6EtNz+yjF1O8u6tDp2vl1p4DuS52I6U6nDtr6veZvUBLBQLx0MSLmHqeH5J1RmSIqehZcUBsUfYKohXxbk49Qpp2gohMnakZoUohTrkQH90Ikk+yk445kfc0vXPO5rnXmtMEfVB0hT8iSDAbpqxzdKpA1DandlzwWQ1O3DjAFmAbC76zYz2yDGrSdfOi2NFtWmWEHG2dwUTW5CLdWcw1gNkHQqWyouHRJ1ElDMNsM6Av9pgIB8EmYiWZGd36fjpgdbO70Af7cVjKizGMTZiIMKQlnRZ73c/lrigoQxPaakitB7t6KqbHLZnI7oPOlDpnyp2Gy7sex81s/7AYJzbmzd0HuY/Vh1BIj/GLfzQHvclpcgBgm8hLOiX69o0IIbBEkXCoWzohJH1nNwTyQkOPTgKv7o4c3N9UaYUoYje7LLoN0WzLaDWYlTdY2yT1tyaVzinOh0IW/wJRxIsB4ZIkohf0hkDjYufy2nHePzkjDNVEmTePYr2fEfbkVFYkME0LjvapqwNxaVV92VxkSshzo=\"}]}}"
       }
     },
     "title": "The Grind Never Stops"

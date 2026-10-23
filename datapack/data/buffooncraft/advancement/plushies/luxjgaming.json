@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"LuxJGaming\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"LuxJGaming\",id:[I;-674339391,-397065510,-1120160275,558439837],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc0Mzc1MTE4NiwKICAicHJvZmlsZUlkIiA6ICJkN2NlNjVjMWU4NTU0MmRhYmQzYmI1ZWQyMTQ5MWQ5ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJMdXhKR2FtaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU0MTA3OWZmNTgzYWU3MjQzYTRiYzM0MDQ0OGQ1MGQwMDA0NmZkM2YxMDM0YWU5ZmEyMDg3MmU0Njc1NmJiNGIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==\",signature:\"IFvTGbwUSTTUzAAaL4yD0TFyg1AHTxVbjc0r6ZqLFB9VPF8sE8DbvOZD/t3Kngq56i4F8M737bEfhvMafFgBQjDwaTcvTZLHEL2fohg8NLzFoq4UUC8lY21y+LaVXsINw/Mo3ScqXB3x3B+NG/XVek2RWyUJk44pKnwSk/5HeJENSbHrXXirW+f3i9S6Qo05+AUfKm62kT/moWu/I4OuuZhCK+qf8P6s2PDt64iykqm35Hb8MFdLB/Qj+8t1qXOvAYazbl5mdOaRg7HDn2o/3Y2pyqrWGxXe7LtngSOygg69QcAkg7ETRaFwMAA6OQa+uZdAhpQB/tkTI/XD10quzhGdMY7mgqLSy2Ob7YbKQrj0NdPgO18e3EjGdS49ygUQY5vPs8nLTOkyhw2987F7FdX0/h6+xn8EUEF3a5U+pAxukBOucsEWo3YSANHXr8jCSKjnyrQw3BOsuaVnFgrUsD91KLuSls5JNut+zf4AzfbZKadu0AgcPQr6X28HVUdpP2cX2djIj9g6WGWtsWIjahJDz2CvUt4hBZvk/mREb5Q+R2uVA90Uf/BurPE6N3i0IgHF9a4zTvQX5WeylL0nMths+hbfImtZy9/AaYcjR84RUwDRuN8hIVdjClKgqA9tvrJLo79jBL+khc9ox58KRj1JTnEuS+27C92nsA5U1GM=\"}]}}"
       }
     },
     "title": "It Was Lux"
