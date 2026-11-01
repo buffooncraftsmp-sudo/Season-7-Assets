@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"Kylady35\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"Kylady35\",id:[I;1499503551,1559119041,-1725166572,-1273641701],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc1ODEyNjMwNiwKICAicHJvZmlsZUlkIiA6ICI1OTYwOWJiZjVjZWU0NGMxOTkyYzBjMTRiNDE1YzUxYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJLeWxhZHkzNSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kYmI1ZDAwYjczZTRjNDBiODYxNWRjZDk4ZDY3NTY4ODk2NmViNDhkOTg3NjllMTUyMzQ0M2IzYzc3MWMyYjZiIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=\",signature:\"II2iKaO4Yct6zEZ9N0KBUx/JupRVse2XkLxQ9Zdn6tvVRU1M2k2V4HRmEiP7gWLtXp+ypCz1jDkG/c2dMQvlpCUwX8+4xVlKRHerIaO4jTFOiPxvK8e47Z1yiBBhgdbf+FjM8UCj38MOupSc/uCM+Emkl62E4/ZX7tiRFN9mWmVMk57u3SC1DRjKwM+FnFIbUD+1R/7GuExXpcMzIVAw1nGklG557tzYUoiQwPgh2HHJmDLIDhCLt2F++s+SmaH/Adj8quZc+CHa9MCWgK9E03AsaY5irEp8IkfJo1ba8YdHyOBLEAMbARV2LAO79juCqLECGlycstfPEjVfFW5j+E0uXPUIAGueA8VkmIL/YUKG9rW+z7d7ov+TcT2Uc5NIvgJFcQF/odnMMqJplZhSGkAYTdRC90L8S+SBbI+7IKPpRLd6sXr8GiFP5Au5QRYf4kmO23qjwg+tmVCphFoW6UMT+dXfby9KRcN7NepAaPLZnUMQifvlihAffcEsXSS3s7Y5jF2SXH1NvQDSAIKc6nFAflFsInjoPD18TMw8fDTGtnfiECLQ1Ccg5pT0QUZTQL3Hy7lFvrpISgwoW9Z78ZCLDp3YsOL28rqx2Yzb7knCB1JmX3HHlycENj9F5gDABPv3P2SuF7oWw4B7AvgB5VGOrJtw5m9soXEMcK5tfxk=\"}]}}"
       }
     },
     "title": "All Hail the Queen"

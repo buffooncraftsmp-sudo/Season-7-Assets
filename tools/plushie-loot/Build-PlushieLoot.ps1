@@ -6,10 +6,12 @@
     1. Reads every plushie definition in datapack/data/<namespace>/plushies/*.json
        and builds <namespace>:plushies/all_plushies, a pool that picks one of them
        at equal weight. Each plushie is also tagged {buffooncraft_plushie:"<id>"}
-       in custom_data so advancements can identify it.
+       in custom_data so advancements can identify it. Also writes a single-plushie
+       table and an admin give function (<namespace>:plushies/give/<id>) for each.
     2. Builds the <namespace>:plushies/* advancement tab (BC logo icon): "first
        plushie" (tab root), one advancement per plushie (title/description from
-       the config's "advancements" block, icon = that player's plushie) and a
+       the config's "advancements" block, icon = that player's plushie with their
+       skin fetched from the Mojang API so it renders on servers too) and a
        "full set" challenge. First/full set play buffoon:plushie.* sounds via
        reward functions. Each plushie matches on our tag OR PlushieOwner.name, so
        one that has been placed and broken (which drops our tag) still counts.
@@ -139,13 +141,38 @@ $($entries -join ",`n")
   ]
 }
 "@
-    Write-JsonText (Join-Path $DatapackDir "data\$namespace\loot_table\plushies\all_plushies.json") $allPlushies
+    $lootDir = Join-Path $DatapackDir "data\$namespace\loot_table\plushies"
+    if (Test-Path $lootDir) { Remove-Item $lootDir -Recurse -Force }
+    Write-JsonText (Join-Path $lootDir 'all_plushies.json') $allPlushies
     Write-Log "Built $poolId with $($defs.Count) plushie(s)"
+
+    # One single-entry table per plushie, for the admin give functions below.
+    for ($i = 0; $i -lt $plushies.Count; $i++) {
+        Write-JsonText (Join-Path $lootDir "$($plushies[$i].Id).json") @"
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+$($entries[$i])
+      ],
+      "rolls": 1
+    }
+  ]
+}
+"@
+    }
 
     # --- Advancements ---------------------------------------------------------
     $advDir = Join-Path $DatapackDir "data\$namespace\advancement\plushies"
     $fnDir  = Join-Path $DatapackDir "data\$namespace\function\plushies"
     foreach ($d in $advDir, $fnDir) { if (Test-Path $d) { Remove-Item $d -Recurse -Force } }
+
+    # Admin give: /function <namespace>:plushies/give/<id> - same item as the chest loot.
+    foreach ($p in $plushies) {
+        Write-JsonText (Join-Path $fnDir "give\$($p.Id).mcfunction") "loot give @s loot ${namespace}:plushies/$($p.Id)`n"
+    }
+    Write-Log "Built $($plushies.Count) give function(s) in ${namespace}:plushies/give/"
 
     # inventory_changed criterion for a plushie whose custom_data contains $Snbt (partial match).
     function Get-PlushieCriterion {
@@ -246,10 +273,25 @@ $($entries -join ",`n")
 }
 "@
 
-    # Icon rendered with the owner's skin (the client resolves PlushieOwner.name).
+    # Icon rendered with the owner's skin. A name-only PlushieOwner only works in single player:
+    # the mod resolves names into a server-side cache it never syncs, so on a dedicated server
+    # clients fall back to the default skin. Baking the Mojang profile (id + signed textures)
+    # into the icon lets the client load the skin itself. Re-run after a player changes skin.
     function Get-PlushieIcon {
         param([string]$Owner)
-        $snbt = ('{PlushieOwner:{name:"' + $Owner + '"}}').Replace('"', '\"')
+        $ownerSnbt = 'name:"' + $Owner + '"'
+        try {
+            $user = Invoke-RestMethod "https://api.mojang.com/users/profiles/minecraft/$Owner" -TimeoutSec 15
+            $prof = Invoke-RestMethod "https://sessionserver.mojang.com/session/minecraft/profile/$($user.id)?unsigned=false" -TimeoutSec 15
+            $tex  = @($prof.properties | Where-Object { $_.name -eq 'textures' })[0]
+            if (-not $tex) { throw 'no textures property' }
+            # UUID as the int-array form the profile codec expects.
+            $ints = 0..3 | ForEach-Object { [Convert]::ToInt32($user.id.Substring($_ * 8, 8), 16) }
+            $ownerSnbt += ',id:[I;' + ($ints -join ',') + '],properties:[{name:"textures",value:"' + $tex.value + '",signature:"' + $tex.signature + '"}]'
+            Write-Log "Baked skin for $Owner into advancement icon"
+        }
+        catch { Write-Log "Couldn't fetch Mojang profile for $Owner ($($_.Exception.Message)) - icon will show the default skin on servers" 'WARN' }
+        $snbt = ('{PlushieOwner:{' + $ownerSnbt + '}}').Replace('"', '\"')
 @"
 {
       "id": "plushie_friends:plushie",

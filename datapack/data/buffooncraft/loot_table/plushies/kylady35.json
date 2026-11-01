@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "plushie_friends:plushie",
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:kylady35"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"kylady35\"}"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

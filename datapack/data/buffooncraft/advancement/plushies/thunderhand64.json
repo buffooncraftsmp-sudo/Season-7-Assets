@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"Thunderhand64\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"Thunderhand64\",id:[I;-1239853358,1750615597,-1502364069,-1342077512],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc1ODEzMTcwMywKICAicHJvZmlsZUlkIiA6ICJiNjE5NTZkMjY4NTg0NjJkYTY3M2JlNWJiMDAxODViOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaHVuZGVyaGFuZDY0IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQyOTM4YmQ2M2Q4YmQ4Y2NkYTkzMWUwY2RhNjRlYWUxMDJjMGRkMTc2ODQ2NDk5M2JhY2RiZjU3MGUxYmUxMjMiCiAgICB9CiAgfQp9\",signature:\"MvfoaIVOYeJXL+Vr+90aashpeeTdIa9Z7dZtlnh976g8acubkEFN3VwoufnlkNQDU1iWFa0cFSoZ+WTLNQnfiaNXf1Ls+J9YjrNBfhj8fFSaHBk4SYGii4aBfc/FoZ6ZFULv/E3EMBN4W0NtP8Z5zO0otOYl0myJkQP/7SAGd6jsXLjgGn2R8FCNjFKB5zOnT81Ahz4UMnfIF31Me+qhkVmL1K44jy87XGx6cLewNchYBib5uxhMVWD3MDtfVf53jxtN7rOeXrp8QKQ5IDHstPRUYF+BlsJ7+AuUqPv6JQmYtpM4FbfKxTTg4Nii0O+O49WunRbnKgzSmLvQbHMTG8HStch4urQvalD7PeNlbaoo5RN7L23wSpH47FDlxI1Dyrx82YOKRRVFXYg8ZPDk7oTPHRsTgdHlCozvWBG4DR2GoVEMjPrbGPNZ0FUaCx8ZgTqIlcXH/x6Q6Frtf/T8PXX9A2EXInq0QfWJ/mKtiCb449QRHAWlBEye+9Pz25GLpS9ux0jPDlIYZptY93l4A0qtCiKYA8suE5xX1eizr9obqIpGvj/AqemnX0WIH8s90zwN1am8jvx4evaFJ17GIc5GqHM4WkeHhhc1Bg7XjwthIzSNvvmisHJCY/5f0yuMlvfrW+VBeoR069aK4EbpsGTcqoKsMHP/oV1m3B59ZHk=\"}]}}"
       }
     },
     "title": "Och!"

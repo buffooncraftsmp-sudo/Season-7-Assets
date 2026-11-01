@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"TheSkipJack81\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"TheSkipJack81\",id:[I;-299925685,-1181662238,-1296113969,-393477419],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc1ODEzMTQ1MywKICAicHJvZmlsZUlkIiA6ICJlZTFmN2Y0YmI5OTE0M2UyYjJiZWRlY2ZlODhjMDJkNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVTa2lwSmFjazgxIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiOWM2ODkyNmIzMWE0N2ZkOTE1Y2U0MjIyYzU0M2FkYTYwYTE5NDhiYzFiZmU5YzYxYTI1OGExYWEzNDk2ZTciCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjNTc5OTY4YzY0YzE3MTk3NDBmZDhjMmE0NTE0NjE4NzliMjM4MDAyNTc0ZmNlNDhmN2QxYTdjMzZhMWM3ZDQiCiAgICB9CiAgfQp9\",signature:\"E/ZPw5rJOMqQFvG0kQM0WQ+GdJ+Gz1JlDkVB1EeuQV5MQDK381EdpwSfV7le6kV5NXHRkKnP43HJbDCCHZI0YO+YvmrvvmGfUoanJ0fA5EW6nDPHSPpx83YFLsuu2jyyi6b3jHtumO2z7+Pp8r1qkj57jvHi87tven1FsOUM4/r1gQdjaEzfdFzrVa9O0W9zAJytCKD7vWBEueuGz+2sXjh3Wq1dahMd/IOrGXbKphM8905kTNpezNIPW00up6IHrLj6E7LqGk06VlDpSNEzC2HAttFPUlstUhz+gmfxs5eEL1ktrQN1OUmEJkw8YXRTcZia94MWxUEl2Ib8kCfagcFAZE9uHbn2rf4GXmZEE8kdJN5Ober8/38O0QFqjgsXIXvNWPim6vlJG3kKbWaoo36mzZf7qWjNOLEXrQF2ucSxCrILGDd7oQEomB2RHvFKcSQoCfEXXAcP88Vo0qOgSyhGHSJfIm2ZKMs1utppu3x9rm3eUVQNUF39HhLcEK7/Jy/c+UsjupKqr20/TgUl7SmOoCZIL0D4YEfH4oRbAGbK4yRzq4fXufMmwNah/ldPA9DM3HwcCygyl7BBwrbp3/s7qWe9N3J99/Zxmf7ZfTZDOqIynoeaOc6bOvUnyjhj27BirgHyniUSkFl8j8R+mlEMH7oWEgBupZpUD0lVdpY=\"}]}}"
       }
     },
     "title": "Welcome to Java"

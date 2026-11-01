@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"OPG8\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"OPG8\",id:[I;-2112010554,287721401,-1361717822,1287820266],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc1ODEyNzQ4MCwKICAicHJvZmlsZUlkIiA6ICI4MjFkNDZjNjExMjY0N2I5YWVkNWQ1YzI0Y2MyOTNlYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJPUEc4IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZjNjQ2YTFkMjAyMTY2YWQ2OTdjMzJlNjI3Mjk0ZDc3MmFiOTAxNzVhZTBlOWUxNjZlMmYxMTU3NTVmMmYyMzgiCiAgICB9CiAgfQp9\",signature:\"lN/JUW9d3MjUzhfWKq6667xmcZZgCPOWGe0boEdJ+TcPGD1Chd8/lYtKCJTVlST9D7JL/Gpt3LwWaojV9OW9kOb2NRbrOBogUS/yfCQWs7H1jdlujBfJMEqCDnkzTJ6RFhM1+BGeqOdzv2gv5//KJVnTb/7fUc3q19CTBIW0S/LmyMVk9X0+UwPXPduiPYVJqgfrUwpWwu6FG8mLbtg93fnn2G1ATqyn83HN7GgqePQ6gDAq3w59SPQzLP59syhOvOUSKsijlvSuK+GP4EuH/rLTH7Je92pu2/7KPhJYX/uEy6qB3XepazKhNFcWLeQaxTsLbalvirVVpqSaWErftYrIKBpswAK0IGkMA9wVOjSjGFaUscUXYSV6NOfTdrAp0Y90NdkTXsrcMy/0X66FP8h/FUbBYnMr0EddUhNbUIR0btmLYMtMu47ibyV2ROlZZWWpUbjhGXd2KkS5fh2uj7W+aZ9NNUfQezSCsRxFdgTF732jHh2eeKTurgUkR5Vtex7XQ73xMPso/MARFlYdANz7u4IU+/faO/v8F7pUfBlc54A44ZLSf8NjbU/EkrzE9e3AKXFjregicjFoUSIAebEAklDn76ooDbXro0FjS2jcZxtW2XIQmerMFPtmgdNYDTA2CKnnc2drJSrYSs3cG/POyahVl4A+JuQepoFBZR0=\"}]}}"
       }
     },
     "title": "Shroom With a View"

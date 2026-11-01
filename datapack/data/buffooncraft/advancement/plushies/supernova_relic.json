@@ -34,7 +34,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"supernova_relic\",id:[I;544441030,-2100149104,-1390511021,-2122477337],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc1ODEzMDg4MiwKICAicHJvZmlsZUlkIiA6ICIyMDczODJjNjgyZDI0NDkwYWQxZTdjNTM4MTdkOTBlNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJzdXBlcm5vdmFfcmVsaWMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAzM2MxZWQyNWYwNzBhMDgwODQ4OTM3NjJhZGFjNDY0YWVhMTg2YTdmM2NjMzNhNWIwYTZkYThhYTMyZDJjMCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZlOGEwMmRmZTllMzkwZTQ0ZmYzM2Q2OWZlZWY5ZDM5NDNmNzZkMzkwMTAxNWJiZDUwZjBiNjc3MjJkMjg4YmQiCiAgICB9CiAgfQp9\",signature:\"I2i73ZbebkyHFnUlNjVTnvs1jpxiIflUUCBOVF9YFzzXGiimPX9j0X3cjdS5PSTnRtvIhzTDoseNgZTAAhkYVkCQxEG1kVpv/XwmdZLcdpE+Brfq1H1Z9HZfg+4NnbLRiz14RoSTFUDWyuHsgXRbyTsuVwYFoGzyfhjwGCpt5uVdXYw/zvueMiuSfG52v2WAyYaX+GLz03F3abjAQ+7cSC5avzzZb2oTkGLVl4bzRpSZU+cluK6sev0lrQDglKPB0BepU+nFU+w5zw/lelzGN2NYYwOjifkkBSGXwctucIH72AxmihLjIgz71xhBXhgwqxPc47xMoWBDQg3pbCvMZV7aJx2Z9Q+/sdMgPZqCJy84SkFAVxgbe+10q5cRbC+W1BBwXNWrn4wTN1RNMIkuqtMG1Hb3bqtsWkJlFwPYMJ2bSdZqy7VaD6fbKSqRQyYMJ/Oh3kYFRJh/rUWxhlnPm03GFKCmME3+W6DOt7P1K0R6t3WVMEHhExAGQ6JhtYzXp3I+PoA6awIAJOhKuxiX0EivBqYhjHAp9DMjFXM1p1VFsls+12jBBU28RNHKCkK8ZU+cUA7HgUl6HoAJ4rI0wN75ppOvxI+UHZvGkfdnYwYH20DXOOduOvickFg1xPe2opJE44wpY4j94kUQVO2w8605YHTdYNc3gSL+wJvIbwY=\"}]}}"
       }
     },
     "title": "Fell From a High Place"

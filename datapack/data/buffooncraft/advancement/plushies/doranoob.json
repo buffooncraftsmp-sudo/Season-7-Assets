@@ -47,7 +47,7 @@
     "icon": {
       "id": "plushie_friends:plushie",
       "components": {
-        "minecraft:custom_data": "{PlushieOwner:{name:\"Doranoob\"}}"
+        "minecraft:custom_data": "{PlushieOwner:{name:\"Doranoob\",id:[I;955378262,-1438495233,-1895679720,-1402454013],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5Mjc1ODEyNDc2MiwKICAicHJvZmlsZUlkIiA6ICIzOGYxZWE1NmFhNDI0ZGZmOGYwMjM5MThhYzY4NDAwMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJEb3Jhbm9vYiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lMjA0MzUyZDVlYmQwYzgyNDZiN2YyYWZmMjY3MTM2ZmI3M2QyYzFkODVmNWNiYTNkNzc2MWIyZjc4ZDAzNmVjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkZTRhODE2ODhhZDE4YjQ5ZTczNWEyNzNlMDg2YzE4ZjFlMzk2Njk1NjEyM2NjYjU3NDAzNGMwNmY1ZDMzNiIKICAgIH0KICB9Cn0=\",signature:\"EmCQeQxUWA53m+llOBsNMxL8/CXHsvcMEOiWHDIIX5cBj4mfoCNL65KH6UZlcEiXXzddGL55zFup/3zTKtxVG3FFYDM31gA8DP+V/imdG/tfm57WpDJahf6rNPisj0iFMA/pV0MuRLOrMXcB4OeDGJNfv6u1Z460JiKu+q0EYvyh1mq4IRf6YTatwwGzH90tTwp0fKZ8wPFestUVEAkft9ad/Wt1MW+fLhsvi+nclHE30Ve/kC90s4OxE5rKJHCikmOr8nHUDXHbKFqil2BXLsFbplbq+P7pjVxXcgslqB/UZbO/sg48QpLUoFeyLJB4nmWm8thvf6SFMr09PJ3mWIJ2nC/WG9W7noyGVe0IsbXTGo2r1vJ5psneQBckjgGcwg1PduAe0cYUxerkzy8seqCMhp8oRFPFzDJ4MDnslpLO8DOQKf9Ircm76zGtEf/DkSh99s0HbKfCjUi2S6qXURTFMpyi9Bzk0qq8MHkULOT4HGrcVE2s0U2D7kZyhB3t8qOgeYlnWjfweEcGDiOOcZ9bP/4eQhXSr9RcfbNt3ZgoFPbMq/4V/gVm+MQ211VGLSNM0ZJYyJZ3Qd4AQvwYwVsl2lmWwtOv8q40zIzITE45150kwRhAI4J+4wHoJeoxumRlWSzMR1vlH2WnHY3P26p+MB5NSTc1qSMy3NBF6jw=\"}]}}"
       }
     },
     "title": "Dines of Dora"
