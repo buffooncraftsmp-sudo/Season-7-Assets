@@ -6,7 +6,8 @@
     1. Reads every plushie definition in datapack/data/<namespace>/plushies/*.json
        and builds <namespace>:plushies/all_plushies, a pool that picks one of them
        at equal weight. Each plushie is also tagged {buffooncraft_plushie:"<id>"}
-       in custom_data so advancements can identify it.
+       in custom_data so advancements can identify it. Also writes a single-plushie
+       table and an admin give function (<namespace>:plushies/give/<id>) for each.
     2. Builds the <namespace>:plushies/* advancement tab (BC logo icon): "first
        plushie" (tab root), one advancement per plushie (title/description from
        the config's "advancements" block, icon = that player's plushie with their
@@ -140,13 +141,38 @@ $($entries -join ",`n")
   ]
 }
 "@
-    Write-JsonText (Join-Path $DatapackDir "data\$namespace\loot_table\plushies\all_plushies.json") $allPlushies
+    $lootDir = Join-Path $DatapackDir "data\$namespace\loot_table\plushies"
+    if (Test-Path $lootDir) { Remove-Item $lootDir -Recurse -Force }
+    Write-JsonText (Join-Path $lootDir 'all_plushies.json') $allPlushies
     Write-Log "Built $poolId with $($defs.Count) plushie(s)"
+
+    # One single-entry table per plushie, for the admin give functions below.
+    for ($i = 0; $i -lt $plushies.Count; $i++) {
+        Write-JsonText (Join-Path $lootDir "$($plushies[$i].Id).json") @"
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+$($entries[$i])
+      ],
+      "rolls": 1
+    }
+  ]
+}
+"@
+    }
 
     # --- Advancements ---------------------------------------------------------
     $advDir = Join-Path $DatapackDir "data\$namespace\advancement\plushies"
     $fnDir  = Join-Path $DatapackDir "data\$namespace\function\plushies"
     foreach ($d in $advDir, $fnDir) { if (Test-Path $d) { Remove-Item $d -Recurse -Force } }
+
+    # Admin give: /function <namespace>:plushies/give/<id> - same item as the chest loot.
+    foreach ($p in $plushies) {
+        Write-JsonText (Join-Path $fnDir "give\$($p.Id).mcfunction") "loot give @s loot ${namespace}:plushies/$($p.Id)`n"
+    }
+    Write-Log "Built $($plushies.Count) give function(s) in ${namespace}:plushies/give/"
 
     # inventory_changed criterion for a plushie whose custom_data contains $Snbt (partial match).
     function Get-PlushieCriterion {
