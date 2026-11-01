@@ -1,0 +1,2 @@
+$data modify storage buffoon:event zones.$(planet) append from storage buffoon:event tmp.new
+$tellraw @s [{text:"Zone added (",color:"#B48CFF"},{score:{name:"#dx",objective:"buffoon.event"}},"x",{score:{name:"#dy",objective:"buffoon.event"}},"x",{score:{name:"#dz",objective:"buffoon.event"}},"). When this planet's puzzles are all in their starting state, run ",{text:'/function buffoon:event/save {planet:"$(planet)"}',color:"white"}]
