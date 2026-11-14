@@ -1,0 +1,9 @@
+{
+  "asset_id": "buffooncraft:the_astronomer",
+  "width": 5,
+  "height": 5,
+  "title": {
+    "translate": "painting.buffooncraft.the_astronomer.title",
+    "fallback": "The Astronomer"
+  }
+}

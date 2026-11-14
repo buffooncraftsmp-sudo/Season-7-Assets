@@ -41,3 +41,13 @@ scoreboard players set #10 buffoon.boss 10
 scoreboard objectives add buffoon.mid dummy
 scoreboard players set #3 buffoon.boss 3
 scoreboard players set #20 buffoon.boss 20
+scoreboard objectives add buffoon.event dummy
+scoreboard players set #busy buffoon.event 0
+execute unless data storage buffoon:event zones run data modify storage buffoon:event zones set value {gas_giant:[],mars:[],the_comet:[],the_moon:[],water_planet:[]}
+data modify storage buffoon:event names set value {gas_giant:"The Gas Giant",mars:"Mars",the_comet:"The Comet",the_moon:"The Moon",water_planet:"The Water Planet"}
+# only the event reset forceloads the master copies - clear any left behind by a crash mid-reset
+execute in buffoon:gas_giant_master run forceload remove all
+execute in buffoon:mars_master run forceload remove all
+execute in buffoon:the_comet_master run forceload remove all
+execute in buffoon:the_moon_master run forceload remove all
+execute in buffoon:water_planet_master run forceload remove all

@@ -1,0 +1,11 @@
+{
+  "type": "buffoon:gas_giant",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "buffoon:gas_giant"
+    },
+    "settings": "buffoon:gas_giant"
+  }
+}
