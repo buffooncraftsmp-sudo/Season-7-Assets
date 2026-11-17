@@ -6,4 +6,4 @@ summon interaction ~ ~0.1 ~ {Tags:["buffoon.stone_hitbox","buffoon.stone_gas_gia
 summon item_display ~ ~0.5 ~ {Tags:["buffoon.stone_display","buffoon.stone_gas_giant"],item:{id:"minecraft:potent_sulfur",count:1},billboard:"fixed",teleport_duration:2,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.75f,0.75f,0.75f]}}
 particle minecraft:spore_blossom_air ~ ~0.5 ~ 0.4 0.4 0.4 0 40
 playsound minecraft:block.beacon.activate block @a ~ ~ ~ 1 1.4
-tellraw @a [{text:"✦ ",color:"#B8D433"},{selector:"@s"},{text:" has placed the Astronomer's Stone of The Gas Giant!",color:"#B8D433"}]
+tellraw @a [{text:"✦ ",color:"#B8D433"},{selector:"@s"},{text:" has placed the Astronomer's Stone of Opaline!",color:"#B8D433"}]

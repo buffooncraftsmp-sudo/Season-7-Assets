@@ -1,4 +1,4 @@
-# Run this standing where the beams should hit (e.g. 0 ~ 0 on The Comet). Snapshots the dig site for resets.
+# Run this standing where the beams should hit (e.g. 0 ~ 0 on Comet Regnum). Snapshots the dig site for resets.
 kill @e[type=marker,tag=buffoon.laser_core]
 kill @e[type=marker,tag=buffoon.laser_origin]
 execute align xz positioned ~0.5 ~ ~0.5 run summon marker ~ ~ ~ {Tags:["buffoon.laser_core"]}

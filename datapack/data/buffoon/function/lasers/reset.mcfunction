@@ -17,5 +17,5 @@ execute at @n[type=marker,tag=buffoon.laser_origin] run tp @n[type=marker,tag=bu
 execute at @n[type=marker,tag=buffoon.laser_origin] run function buffoon:lasers/core_stone_place
 execute at @n[type=marker,tag=buffoon.laser_origin] run particle minecraft:reverse_portal ~ ~-2 ~ 4 2 4 0.05 400 force @a
 execute at @n[type=marker,tag=buffoon.laser_origin] run playsound minecraft:block.respawn_anchor.set_spawn master @a[distance=..300] ~ ~ ~ 4 0.6
-tellraw @a [{text:"☄ ",color:"gold"},{text:"The comet has sealed itself once more. ",color:"gold",bold:true},{text:"The mining lasers stand primed for the next expedition.",color:"yellow"}]
-execute at @n[type=marker,tag=buffoon.laser_origin] run title @a[distance=..300] actionbar {text:"☄ Comet reformed - lasers primed and ready ☄",color:"gold"}
+tellraw @a [{text:"☄ ",color:"gold"},{text:"Comet Regnum has sealed itself once more. ",color:"gold",bold:true},{text:"The mining lasers stand primed for the next expedition.",color:"yellow"}]
+execute at @n[type=marker,tag=buffoon.laser_origin] run title @a[distance=..300] actionbar {text:"☄ Comet Regnum reformed - lasers primed and ready ☄",color:"gold"}
