@@ -5,4 +5,4 @@ execute at @n[type=marker,tag=buffoon.boss_pillar_water_planet] run particle min
 kill @e[type=item_display,tag=buffoon.crystal_water_planet]
 execute at @n[type=marker,tag=buffoon.boss_pillar_water_planet] run kill @e[type=item_display,tag=buffoon.boss_stone,distance=..5]
 playsound minecraft:block.respawn_anchor.deplete master @a[distance=..120] ~ ~ ~ 4 0.6
-tellraw @a[distance=..150] [{text:"✦ ",color:"#3FD8E0"},{text:"The Astronomer's Stone of The Water Planet has been shattered!",color:"#3FD8E0"}]
+tellraw @a[distance=..150] [{text:"✦ ",color:"#3FD8E0"},{text:"The Astronomer's Stone of Coralline has been shattered!",color:"#3FD8E0"}]

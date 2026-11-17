@@ -5,4 +5,4 @@ execute at @n[type=marker,tag=buffoon.boss_pillar_mars] run particle minecraft:e
 kill @e[type=item_display,tag=buffoon.crystal_mars]
 execute at @n[type=marker,tag=buffoon.boss_pillar_mars] run kill @e[type=item_display,tag=buffoon.boss_stone,distance=..5]
 playsound minecraft:block.respawn_anchor.deplete master @a[distance=..120] ~ ~ ~ 4 0.6
-tellraw @a[distance=..150] [{text:"✦ ",color:"#E0452B"},{text:"The Astronomer's Stone of Mars has been shattered!",color:"#E0452B"}]
+tellraw @a[distance=..150] [{text:"✦ ",color:"#E0452B"},{text:"The Astronomer's Stone of Calderon has been shattered!",color:"#E0452B"}]

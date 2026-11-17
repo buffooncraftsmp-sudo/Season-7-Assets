@@ -1,4 +1,4 @@
-execute if score #paused buffoon.laser matches 1 run bossbar set buffoon:mining name {text:"Mining the Comet Core",color:"gold"}
+execute if score #paused buffoon.laser matches 1 run bossbar set buffoon:mining name {text:"Mining Comet Regnum's Core",color:"gold"}
 execute if score #paused buffoon.laser matches 1 run bossbar set buffoon:mining color yellow
 scoreboard players set #paused buffoon.laser 0
 # drill point

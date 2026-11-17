@@ -5,4 +5,4 @@ execute at @n[type=marker,tag=buffoon.boss_pillar_gas_giant] run particle minecr
 kill @e[type=item_display,tag=buffoon.crystal_gas_giant]
 execute at @n[type=marker,tag=buffoon.boss_pillar_gas_giant] run kill @e[type=item_display,tag=buffoon.boss_stone,distance=..5]
 playsound minecraft:block.respawn_anchor.deplete master @a[distance=..120] ~ ~ ~ 4 0.6
-tellraw @a[distance=..150] [{text:"✦ ",color:"#B8D433"},{text:"The Astronomer's Stone of The Gas Giant has been shattered!",color:"#B8D433"}]
+tellraw @a[distance=..150] [{text:"✦ ",color:"#B8D433"},{text:"The Astronomer's Stone of Opaline has been shattered!",color:"#B8D433"}]

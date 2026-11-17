@@ -1,7 +1,7 @@
 scoreboard players set #fired buffoon.laser 1
 scoreboard players set #state buffoon.laser 1
 scoreboard players set #mine buffoon.laser 2400
-bossbar add buffoon:mining {text:"Mining the Comet Core",color:"gold"}
+bossbar add buffoon:mining {text:"Mining Comet Regnum's Core",color:"gold"}
 bossbar set buffoon:mining max 2400
 bossbar set buffoon:mining color yellow
 bossbar set buffoon:mining style notched_10

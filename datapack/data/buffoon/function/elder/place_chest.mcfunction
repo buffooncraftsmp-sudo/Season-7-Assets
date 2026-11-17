@@ -1,0 +1,5 @@
+summon marker ~ ~ ~ {Tags:["buffoon.elder_chest"]}
+execute if block ~ ~ ~ #buffoon:elder_water run tag @n[type=marker,tag=buffoon.elder_chest] add buffoon.elder_chest_water
+execute if entity @n[type=marker,tag=buffoon.elder_chest_water,distance=..0.5] run setblock ~ ~ ~ chest[waterlogged=true]{CustomName:{text:"The Elder's Hoard",color:"#3FD8E0",bold:true}}
+execute unless entity @n[type=marker,tag=buffoon.elder_chest_water,distance=..0.5] run setblock ~ ~ ~ chest{CustomName:{text:"The Elder's Hoard",color:"#3FD8E0",bold:true}}
+item replace block ~ ~ ~ container.13 with minecraft:turtle_helmet[minecraft:custom_name={text:"Crown of the Deep",color:"#3FD8E0",italic:false,bold:true},minecraft:lore=[{text:"Pulled from Coralline's deepest trench",color:"gray",italic:true},{text:"Grants the power of a conduit",color:"dark_aqua",italic:false}],minecraft:enchantments={"minecraft:protection":4,"minecraft:unbreaking":3,"minecraft:mending":1},minecraft:item_model="buffoon:conduit_helmet",minecraft:equippable={slot:"head",asset_id:"buffoon:conduit",equip_sound:"minecraft:item.armor.equip_turtle"},minecraft:custom_data={buffoon_item:"conduit_helmet"}]

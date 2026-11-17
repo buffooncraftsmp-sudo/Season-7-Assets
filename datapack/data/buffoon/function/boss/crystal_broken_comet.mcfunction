@@ -5,4 +5,4 @@ execute at @n[type=marker,tag=buffoon.boss_pillar_comet] run particle minecraft:
 kill @e[type=item_display,tag=buffoon.crystal_comet]
 execute at @n[type=marker,tag=buffoon.boss_pillar_comet] run kill @e[type=item_display,tag=buffoon.boss_stone,distance=..5]
 playsound minecraft:block.respawn_anchor.deplete master @a[distance=..120] ~ ~ ~ 4 0.6
-tellraw @a[distance=..150] [{text:"✦ ",color:"#FFB627"},{text:"The Astronomer's Stone of The Comet has been shattered!",color:"#FFB627"}]
+tellraw @a[distance=..150] [{text:"✦ ",color:"#FFB627"},{text:"The Astronomer's Stone of Comet Regnum has been shattered!",color:"#FFB627"}]

@@ -33,3 +33,5 @@ function buffoon:the_moon/tick
 function buffoon:boss/tick
 # trophies
 function buffoon:trophy/tick
+# coralline elder boss
+function buffoon:elder/tick

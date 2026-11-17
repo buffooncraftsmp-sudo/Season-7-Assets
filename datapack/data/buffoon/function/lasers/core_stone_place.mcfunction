@@ -1,4 +1,4 @@
-# Puts a placed Astronomer's Stone of The Comet (light + spinning core) at the core centre
+# Puts a placed Astronomer's Stone of Comet Regnum (light + spinning core) at the core centre
 kill @e[tag=buffoon.stone_comet,distance=..1.5]
 setblock ~ ~ ~ minecraft:light[level=15]
 summon marker ~ ~ ~ {Tags:["buffoon.stone","buffoon.stone_comet","buffoon.core_stone"]}
