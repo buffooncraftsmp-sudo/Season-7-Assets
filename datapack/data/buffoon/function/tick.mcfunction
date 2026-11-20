@@ -35,3 +35,5 @@ function buffoon:boss/tick
 function buffoon:trophy/tick
 # coralline elder boss
 function buffoon:elder/tick
+# adjustable water levels
+function buffoon:water/tick
