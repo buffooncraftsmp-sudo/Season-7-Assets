@@ -53,3 +53,9 @@ execute in buffoon:the_moon_master run forceload remove all
 execute in buffoon:water_planet_master run forceload remove all
 scoreboard objectives add buffoon.elder dummy
 execute unless score #state buffoon.elder matches 0.. run scoreboard players set #state buffoon.elder 0
+scoreboard objectives add buffoon.water dummy
+scoreboard players set #2 buffoon.water 2
+# ticks per layer of water - lower is faster
+execute unless score #speed buffoon.water matches 1.. run scoreboard players set #speed buffoon.water 10
+execute unless data storage buffoon:water ids run data modify storage buffoon:water ids set value []
+scoreboard players set #active buffoon.water 1
