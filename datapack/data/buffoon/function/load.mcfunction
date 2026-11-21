@@ -59,3 +59,7 @@ scoreboard players set #2 buffoon.water 2
 execute unless score #speed buffoon.water matches 1.. run scoreboard players set #speed buffoon.water 10
 execute unless data storage buffoon:water ids run data modify storage buffoon:water ids set value []
 scoreboard players set #active buffoon.water 1
+scoreboard objectives add buffoon.twins dummy
+execute unless score #west buffoon.twins matches 0.. run scoreboard players set #west buffoon.twins 0
+execute unless score #east buffoon.twins matches 0.. run scoreboard players set #east buffoon.twins 0
+data modify storage buffoon:twins sides set value {west:{side:"west",name:"Undertow",color:"#2FA4B5",bar:"blue",title:"The Western Tide"},east:{side:"east",name:"Riptide",color:"#4FD1A5",bar:"green",title:"The Eastern Tide"}}
