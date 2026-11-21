@@ -37,3 +37,5 @@ function buffoon:trophy/tick
 function buffoon:elder/tick
 # adjustable water levels
 function buffoon:water/tick
+# tide twins mini bosses
+function buffoon:twins/tick

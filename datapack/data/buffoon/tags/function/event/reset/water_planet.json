@@ -1,6 +1,7 @@
 {
   "values": [
     "buffoon:elder/reset",
-    "buffoon:water/reset_coralline"
+    "buffoon:water/reset_coralline",
+    "buffoon:twins/reset_all"
   ]
 }
