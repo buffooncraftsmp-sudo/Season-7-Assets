@@ -32,3 +32,5 @@ execute as @e[type=item_display,tag=buffoon.trophy_display] at @s run tp @s ~ ~ 
 scoreboard players add #tt buffoon.boss 1
 execute if score #tt buffoon.boss matches 20.. run scoreboard players set #tt buffoon.boss 0
 execute if score #tt buffoon.boss matches 0 as @e[type=marker,tag=buffoon.trophy] at @s run particle minecraft:end_rod ~ ~0.6 ~ 0.25 0.25 0.25 0.01 1
+execute as @e[type=interaction,tag=buffoon.trophy_shut] if data entity @s attack at @s as @n[type=marker,tag=buffoon.trophy_shut,distance=..1] at @s run function buffoon:trophy/shut/pickup
+execute as @e[type=marker,tag=buffoon.trophy_shut] at @s unless block ~ ~ ~ minecraft:light run function buffoon:trophy/shut/pickup

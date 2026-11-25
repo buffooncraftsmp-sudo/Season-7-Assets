@@ -13,7 +13,7 @@
     }
   },
   "display": {
-    "description": "15 Buffoons are hiding in chests across the world. Can you find them all?",
+    "description": "16 Buffoons are hiding in chests across the world. Can you find them all?",
     "frame": "goal",
     "icon": {
       "id": "plushie_friends:plushie"
