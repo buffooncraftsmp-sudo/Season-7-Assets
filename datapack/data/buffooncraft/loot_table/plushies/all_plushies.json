@@ -51,6 +51,20 @@
           "modifier": [
             {
               "type": "plushie_friends:set_plushie",
+              "id": "buffooncraft:echorider"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{buffooncraft_plushie:\"echorider\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushie_friends:plushie",
+          "modifier": [
+            {
+              "type": "plushie_friends:set_plushie",
               "id": "buffooncraft:flyingvillager"
             },
             {

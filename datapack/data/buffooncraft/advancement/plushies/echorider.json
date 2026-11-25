@@ -1,0 +1,62 @@
+{
+  "parent": "buffooncraft:plushies/more_to_find",
+  "criteria": {
+    "tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"echorider\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"EchoRider\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "owner_1": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"echorider\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Find Echo's plushie. You'll hear it before you see it",
+    "hidden": true,
+    "icon": {
+      "id": "plushie_friends:plushie",
+      "components": {
+        "minecraft:custom_data": "{PlushieOwner:{name:\"EchoRider\",id:[I;-60399316,1940803572,-1668493924,-1067034672],properties:[{name:\"textures\",value:\"ewogICJ0aW1lc3RhbXAiIDogMTc5NTU4ODc1NjMzNywKICAicHJvZmlsZUlkIiA6ICJmYzY2NjEyYzczYWU0ZmY0OWM4Y2NkOWNjMDY2NTdkMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJFY2hvUmlkZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmEyNDBlOGVlY2I4OGYzZDgyODE2MmI4M2MxNzM4NDEzYjMwZGFlYjk0ZTk4ZmQ5NmI1ZDliZDhjN2VhZTZkYiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9\",signature:\"vgJ6MqTy8loffUCKHkot5tSm/7/mVCrZle9hNaGvxsYblJFUpHsn6E5DUz/48EybuHHDhcb6G5EUrz7UkoS1ickJ2KFvYP+84Ik1G0EnnX/0BP1TaPXFTHCMpBX/qeoPy+pYacy1jVG0ZU276qC6i5WQ02Gv2OrSWQyt6njaBr/ZrMbSvWSm7ctAkers9GG/QndJ9+vrVo5BWrxrtobOXUz33btBhVT81YEHC0fcHKAxIo9KOkSJrJoVlO3I/HL68ef6Hm8AhTIkkxt7+7CaXhn0ITKTbVoU1lyP9jLDnk39apHYRGraOc9oqdufxLDt1rZuU5UNZ85wi34+FqqwbHo1zEorV40IsyJBM9y598gywpzpurvVjfSGUcPS1CoYGbj4+ZIOa+EAsXxkmPOpitTe9hQQCHKi4hIAdrTxuDHNR4xFlJn8AAdSFtO3hwpkae5qVU2gZ/mPX3AJguF27l2fRDT71oOkwVorW6njtdQ2M1tTIwg649vZeCcoK2XwB2B42+Z9ejF3qKlB/iehNfBPQJ+9rCrVDonrXuJERuSUrmJeyVRQijPM3IbroIfoWrHLwfxYtNr81Qy2opyaQnjcnQOyhySCM2+w6umVicRh5ZUVdj3vLLUnUH3Ik/JGBi5KXNtTjgtPUU2M9W+BuN1w/QiX/iPCH+dENVA2rww=\"}]}}"
+      }
+    },
+    "title": "Echo Echo Echo"
+  },
+  "requirements": [
+    [
+      "tagged",
+      "owner",
+      "owner_1"
+    ]
+  ]
+}

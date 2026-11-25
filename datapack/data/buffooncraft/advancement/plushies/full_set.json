@@ -118,6 +118,45 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "echorider_tagged": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{buffooncraft_plushie:\"echorider\"}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "echorider_owner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"EchoRider\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "echorider_owner_1": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie_friends:plushie",
+            "predicates": {
+              "minecraft:custom_data": "{PlushieOwner:{name:\"echorider\"}}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "flyingvillager_tagged": {
       "conditions": {
         "items": [
@@ -549,7 +588,7 @@
     }
   },
   "display": {
-    "description": "Collect all 15 plushies",
+    "description": "Collect all 16 plushies",
     "frame": "challenge",
     "icon": {
       "id": "plushie_friends:plushie"
@@ -571,6 +610,11 @@
       "doranoob_tagged",
       "doranoob_owner",
       "doranoob_owner_1"
+    ],
+    [
+      "echorider_tagged",
+      "echorider_owner",
+      "echorider_owner_1"
     ],
     [
       "flyingvillager_tagged",
